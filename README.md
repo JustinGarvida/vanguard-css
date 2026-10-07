@@ -1,2 +1,4 @@
-# vanguard-css
-Repository for the Vanguard Client Segmentation Service.
+## Vanguard Centralized Client Segmentation Service
+The Vanguard Centralized Client Segmentation Service is designed to streamline and standardize how client segments are identified and delivered across Vanguard's digital platforms. Client segmentation plays a critical role in enabling personalized experiences, ensuring that each client receives appropriate products, services, content, and recommendations based on their unique profile.
+
+Today, determining a client's segment often requires multiple applications and services to be queried during an interaction. This distributed approach creates complexity, increases development effort, and introduces dependencies on multiple teams whenever a business area wants to deliver a new personalized experience. As a result, innovation can be slowed by integration challenges and inconsistent segmentation logic across platforms.
