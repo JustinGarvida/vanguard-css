@@ -1,0 +1,134 @@
+{
+  "meta": {
+    "asOfDate": "2026-10-01",
+    "seed": 42,
+    "fictional": true
+  },
+  "records": [
+    {
+      "clientId": "C-100250",
+      "case": "TIER_BOUNDARY",
+      "detail": "Total assets one cent below $50,000"
+    },
+    {
+      "clientId": "C-100020",
+      "case": "TIER_BOUNDARY",
+      "detail": "Total assets exactly at $50,000"
+    },
+    {
+      "clientId": "C-100130",
+      "case": "TIER_BOUNDARY",
+      "detail": "Total assets one cent below $500,000"
+    },
+    {
+      "clientId": "C-100144",
+      "case": "TIER_BOUNDARY",
+      "detail": "Total assets exactly at $500,000"
+    },
+    {
+      "clientId": "C-100091",
+      "case": "TIER_BOUNDARY",
+      "detail": "Total assets one cent below $1,000,000"
+    },
+    {
+      "clientId": "C-100021",
+      "case": "TIER_BOUNDARY",
+      "detail": "Total assets exactly at $1,000,000"
+    },
+    {
+      "clientId": "C-100228",
+      "case": "TIER_BOUNDARY",
+      "detail": "Total assets one cent below $5,000,000"
+    },
+    {
+      "clientId": "C-100105",
+      "case": "TIER_BOUNDARY",
+      "detail": "Total assets exactly at $5,000,000"
+    },
+    {
+      "clientId": "C-100188",
+      "case": "JOINT_ACCOUNT",
+      "detail": "Shares a joint brokerage account with C-100114; decide how joint assets count toward tiers"
+    },
+    {
+      "clientId": "C-100114",
+      "case": "JOINT_ACCOUNT",
+      "detail": "Shares a joint brokerage account with C-100188"
+    },
+    {
+      "clientId": "C-100062",
+      "case": "JOINT_ACCOUNT",
+      "detail": "Shares a joint brokerage account with C-100178; decide how joint assets count toward tiers"
+    },
+    {
+      "clientId": "C-100178",
+      "case": "JOINT_ACCOUNT",
+      "detail": "Shares a joint brokerage account with C-100062"
+    },
+    {
+      "clientId": "C-100030",
+      "case": "JOINT_ACCOUNT",
+      "detail": "Shares a joint brokerage account with C-100192; decide how joint assets count toward tiers"
+    },
+    {
+      "clientId": "C-100192",
+      "case": "JOINT_ACCOUNT",
+      "detail": "Shares a joint brokerage account with C-100030"
+    },
+    {
+      "clientId": "C-100081",
+      "case": "ALL_ACCOUNTS_CLOSED",
+      "detail": "Profile exists but every account is closed with $0 balance"
+    },
+    {
+      "clientId": "C-100117",
+      "case": "NO_ACCOUNTS",
+      "detail": "Profile exists but the accounts system returns nothing"
+    },
+    {
+      "clientId": "C-100060",
+      "case": "MISSING_ENGAGEMENT",
+      "detail": "Engagement system has no record for this client"
+    },
+    {
+      "clientId": "C-100093",
+      "case": "MISSING_ADVICE",
+      "detail": "Advice system has no record for this client"
+    },
+    {
+      "clientId": "C-100197",
+      "case": "MISSING_FIELD",
+      "detail": "Profile.dateOfBirth is null"
+    },
+    {
+      "clientId": "C-100247",
+      "case": "MISSING_FIELD",
+      "detail": "Profile.state is null"
+    },
+    {
+      "clientId": "C-100233",
+      "case": "CONFLICTING_DATA",
+      "detail": "Age 29 but employmentStatus is RETIRED"
+    },
+    {
+      "clientId": "C-100085",
+      "case": "CONFLICTING_DATA",
+      "detail": "adviceService is NONE but an advisorId is assigned"
+    },
+    {
+      "clientId": "C-100063",
+      "case": "LIFE_STAGE_BOUNDARY",
+      "detail": "Turns 65 exactly on the as-of date 2026-10-01"
+    },
+    {
+      "clientId": "C-999999",
+      "case": "ORPHAN_RECORD",
+      "detail": "Engagement record with no matching profile"
+    },
+    {
+      "clientId": "C-000000",
+      "case": "UNKNOWN_CLIENT",
+      "detail": "Not present in any source; the API should return 404"
+    }
+  ]
+}

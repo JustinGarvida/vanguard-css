@@ -1,0 +1,2296 @@
+{
+  "meta": {
+    "asOfDate": "2026-10-01",
+    "seed": 42,
+    "fictional": true
+  },
+  "records": [
+    {
+      "clientId": "C-100001",
+      "adviceService": "NONE",
+      "advisorId": null,
+      "enrolledDate": null,
+      "riskTolerance": null,
+      "goals": []
+    },
+    {
+      "clientId": "C-100002",
+      "adviceService": "NONE",
+      "advisorId": null,
+      "enrolledDate": null,
+      "riskTolerance": null,
+      "goals": []
+    },
+    {
+      "clientId": "C-100003",
+      "adviceService": "PERSONAL_ADVISOR_SELECT",
+      "advisorId": "ADV-115",
+      "enrolledDate": "2016-10-07",
+      "riskTolerance": "CONSERVATIVE",
+      "goals": [
+        "EMERGENCY_FUND",
+        "RETIREMENT",
+        "EDUCATION"
+      ]
+    },
+    {
+      "clientId": "C-100004",
+      "adviceService": "DIGITAL_ADVISOR",
+      "advisorId": null,
+      "enrolledDate": "2020-05-03",
+      "riskTolerance": "MODERATELY_AGGRESSIVE",
+      "goals": [
+        "EMERGENCY_FUND",
+        "EDUCATION",
+        "WEALTH_TRANSFER"
+      ]
+    },
+    {
+      "clientId": "C-100005",
+      "adviceService": "NONE",
+      "advisorId": null,
+      "enrolledDate": null,
+      "riskTolerance": "CONSERVATIVE",
+      "goals": []
+    },
+    {
+      "clientId": "C-100006",
+      "adviceService": "PERSONAL_ADVISOR_WEALTH_MGMT",
+      "advisorId": "ADV-116",
+      "enrolledDate": "2019-08-01",
+      "riskTolerance": "MODERATELY_AGGRESSIVE",
+      "goals": [
+        "HOME_PURCHASE"
+      ]
+    },
+    {
+      "clientId": "C-100007",
+      "adviceService": "NONE",
+      "advisorId": null,
+      "enrolledDate": null,
+      "riskTolerance": "MODERATELY_AGGRESSIVE",
+      "goals": []
+    },
+    {
+      "clientId": "C-100008",
+      "adviceService": "NONE",
+      "advisorId": null,
+      "enrolledDate": null,
+      "riskTolerance": "MODERATE",
+      "goals": []
+    },
+    {
+      "clientId": "C-100009",
+      "adviceService": "NONE",
+      "advisorId": null,
+      "enrolledDate": null,
+      "riskTolerance": "AGGRESSIVE",
+      "goals": []
+    },
+    {
+      "clientId": "C-100010",
+      "adviceService": "NONE",
+      "advisorId": null,
+      "enrolledDate": null,
+      "riskTolerance": null,
+      "goals": []
+    },
+    {
+      "clientId": "C-100011",
+      "adviceService": "NONE",
+      "advisorId": null,
+      "enrolledDate": null,
+      "riskTolerance": null,
+      "goals": []
+    },
+    {
+      "clientId": "C-100012",
+      "adviceService": "PERSONAL_ADVISOR_SELECT",
+      "advisorId": "ADV-126",
+      "enrolledDate": "2023-09-26",
+      "riskTolerance": "CONSERVATIVE",
+      "goals": [
+        "EMERGENCY_FUND",
+        "GENERAL_SAVINGS",
+        "RETIREMENT"
+      ]
+    },
+    {
+      "clientId": "C-100013",
+      "adviceService": "PERSONAL_ADVISOR_SELECT",
+      "advisorId": "ADV-126",
+      "enrolledDate": "2020-08-28",
+      "riskTolerance": "CONSERVATIVE",
+      "goals": [
+        "RETIREMENT",
+        "WEALTH_TRANSFER"
+      ]
+    },
+    {
+      "clientId": "C-100014",
+      "adviceService": "NONE",
+      "advisorId": null,
+      "enrolledDate": null,
+      "riskTolerance": null,
+      "goals": []
+    },
+    {
+      "clientId": "C-100015",
+      "adviceService": "NONE",
+      "advisorId": null,
+      "enrolledDate": null,
+      "riskTolerance": null,
+      "goals": []
+    },
+    {
+      "clientId": "C-100016",
+      "adviceService": "NONE",
+      "advisorId": null,
+      "enrolledDate": null,
+      "riskTolerance": "AGGRESSIVE",
+      "goals": []
+    },
+    {
+      "clientId": "C-100017",
+      "adviceService": "DIGITAL_ADVISOR",
+      "advisorId": null,
+      "enrolledDate": "2020-03-27",
+      "riskTolerance": "MODERATELY_AGGRESSIVE",
+      "goals": [
+        "WEALTH_TRANSFER",
+        "EDUCATION",
+        "EMERGENCY_FUND"
+      ]
+    },
+    {
+      "clientId": "C-100018",
+      "adviceService": "NONE",
+      "advisorId": null,
+      "enrolledDate": null,
+      "riskTolerance": null,
+      "goals": []
+    },
+    {
+      "clientId": "C-100019",
+      "adviceService": "PERSONAL_ADVISOR_WEALTH_MGMT",
+      "advisorId": "ADV-131",
+      "enrolledDate": "2024-11-30",
+      "riskTolerance": "CONSERVATIVE",
+      "goals": [
+        "HOME_PURCHASE"
+      ]
+    },
+    {
+      "clientId": "C-100020",
+      "adviceService": "NONE",
+      "advisorId": null,
+      "enrolledDate": null,
+      "riskTolerance": "MODERATELY_AGGRESSIVE",
+      "goals": []
+    },
+    {
+      "clientId": "C-100021",
+      "adviceService": "NONE",
+      "advisorId": null,
+      "enrolledDate": null,
+      "riskTolerance": null,
+      "goals": []
+    },
+    {
+      "clientId": "C-100022",
+      "adviceService": "PERSONAL_ADVISOR",
+      "advisorId": "ADV-124",
+      "enrolledDate": "2023-01-19",
+      "riskTolerance": "MODERATELY_AGGRESSIVE",
+      "goals": [
+        "HOME_PURCHASE",
+        "RETIREMENT",
+        "EMERGENCY_FUND"
+      ]
+    },
+    {
+      "clientId": "C-100023",
+      "adviceService": "PERSONAL_ADVISOR_SELECT",
+      "advisorId": "ADV-108",
+      "enrolledDate": "2023-03-17",
+      "riskTolerance": "MODERATELY_AGGRESSIVE",
+      "goals": [
+        "HOME_PURCHASE"
+      ]
+    },
+    {
+      "clientId": "C-100024",
+      "adviceService": "PERSONAL_ADVISOR_WEALTH_MGMT",
+      "advisorId": "ADV-114",
+      "enrolledDate": "2025-07-29",
+      "riskTolerance": "CONSERVATIVE",
+      "goals": [
+        "WEALTH_TRANSFER",
+        "HOME_PURCHASE",
+        "EDUCATION"
+      ]
+    },
+    {
+      "clientId": "C-100025",
+      "adviceService": "PERSONAL_ADVISOR",
+      "advisorId": "ADV-113",
+      "enrolledDate": "2015-06-24",
+      "riskTolerance": "CONSERVATIVE",
+      "goals": [
+        "EDUCATION",
+        "GENERAL_SAVINGS"
+      ]
+    },
+    {
+      "clientId": "C-100026",
+      "adviceService": "NONE",
+      "advisorId": null,
+      "enrolledDate": null,
+      "riskTolerance": "AGGRESSIVE",
+      "goals": []
+    },
+    {
+      "clientId": "C-100027",
+      "adviceService": "PERSONAL_ADVISOR_SELECT",
+      "advisorId": "ADV-109",
+      "enrolledDate": "2025-08-21",
+      "riskTolerance": "CONSERVATIVE",
+      "goals": [
+        "RETIREMENT"
+      ]
+    },
+    {
+      "clientId": "C-100028",
+      "adviceService": "NONE",
+      "advisorId": null,
+      "enrolledDate": null,
+      "riskTolerance": null,
+      "goals": []
+    },
+    {
+      "clientId": "C-100029",
+      "adviceService": "PERSONAL_ADVISOR",
+      "advisorId": "ADV-113",
+      "enrolledDate": "2021-10-05",
+      "riskTolerance": "MODERATE",
+      "goals": [
+        "HOME_PURCHASE"
+      ]
+    },
+    {
+      "clientId": "C-100030",
+      "adviceService": "NONE",
+      "advisorId": null,
+      "enrolledDate": null,
+      "riskTolerance": null,
+      "goals": []
+    },
+    {
+      "clientId": "C-100031",
+      "adviceService": "DIGITAL_ADVISOR",
+      "advisorId": null,
+      "enrolledDate": "2018-11-14",
+      "riskTolerance": "CONSERVATIVE",
+      "goals": [
+        "GENERAL_SAVINGS"
+      ]
+    },
+    {
+      "clientId": "C-100032",
+      "adviceService": "NONE",
+      "advisorId": null,
+      "enrolledDate": null,
+      "riskTolerance": null,
+      "goals": []
+    },
+    {
+      "clientId": "C-100033",
+      "adviceService": "DIGITAL_ADVISOR",
+      "advisorId": null,
+      "enrolledDate": "2024-10-25",
+      "riskTolerance": "CONSERVATIVE",
+      "goals": [
+        "HOME_PURCHASE",
+        "EDUCATION"
+      ]
+    },
+    {
+      "clientId": "C-100034",
+      "adviceService": "NONE",
+      "advisorId": null,
+      "enrolledDate": null,
+      "riskTolerance": "MODERATE",
+      "goals": []
+    },
+    {
+      "clientId": "C-100035",
+      "adviceService": "PERSONAL_ADVISOR_WEALTH_MGMT",
+      "advisorId": "ADV-113",
+      "enrolledDate": "2018-05-09",
+      "riskTolerance": "AGGRESSIVE",
+      "goals": [
+        "HOME_PURCHASE"
+      ]
+    },
+    {
+      "clientId": "C-100036",
+      "adviceService": "DIGITAL_ADVISOR",
+      "advisorId": null,
+      "enrolledDate": "2025-06-03",
+      "riskTolerance": "AGGRESSIVE",
+      "goals": [
+        "EDUCATION",
+        "GENERAL_SAVINGS",
+        "RETIREMENT"
+      ]
+    },
+    {
+      "clientId": "C-100037",
+      "adviceService": "NONE",
+      "advisorId": null,
+      "enrolledDate": null,
+      "riskTolerance": null,
+      "goals": []
+    },
+    {
+      "clientId": "C-100038",
+      "adviceService": "PERSONAL_ADVISOR_SELECT",
+      "advisorId": "ADV-131",
+      "enrolledDate": "2019-06-28",
+      "riskTolerance": "CONSERVATIVE",
+      "goals": [
+        "RETIREMENT"
+      ]
+    },
+    {
+      "clientId": "C-100039",
+      "adviceService": "NONE",
+      "advisorId": null,
+      "enrolledDate": null,
+      "riskTolerance": "MODERATELY_AGGRESSIVE",
+      "goals": []
+    },
+    {
+      "clientId": "C-100040",
+      "adviceService": "NONE",
+      "advisorId": null,
+      "enrolledDate": null,
+      "riskTolerance": "MODERATELY_AGGRESSIVE",
+      "goals": []
+    },
+    {
+      "clientId": "C-100041",
+      "adviceService": "NONE",
+      "advisorId": null,
+      "enrolledDate": null,
+      "riskTolerance": "CONSERVATIVE",
+      "goals": []
+    },
+    {
+      "clientId": "C-100042",
+      "adviceService": "PERSONAL_ADVISOR_SELECT",
+      "advisorId": "ADV-139",
+      "enrolledDate": "2022-02-22",
+      "riskTolerance": "MODERATE",
+      "goals": [
+        "WEALTH_TRANSFER",
+        "HOME_PURCHASE"
+      ]
+    },
+    {
+      "clientId": "C-100043",
+      "adviceService": "NONE",
+      "advisorId": null,
+      "enrolledDate": null,
+      "riskTolerance": null,
+      "goals": []
+    },
+    {
+      "clientId": "C-100044",
+      "adviceService": "NONE",
+      "advisorId": null,
+      "enrolledDate": null,
+      "riskTolerance": "MODERATE",
+      "goals": []
+    },
+    {
+      "clientId": "C-100045",
+      "adviceService": "DIGITAL_ADVISOR",
+      "advisorId": null,
+      "enrolledDate": "2017-05-29",
+      "riskTolerance": "MODERATELY_AGGRESSIVE",
+      "goals": [
+        "EMERGENCY_FUND",
+        "WEALTH_TRANSFER"
+      ]
+    },
+    {
+      "clientId": "C-100046",
+      "adviceService": "PERSONAL_ADVISOR",
+      "advisorId": "ADV-107",
+      "enrolledDate": "2025-06-09",
+      "riskTolerance": "MODERATELY_AGGRESSIVE",
+      "goals": [
+        "EMERGENCY_FUND"
+      ]
+    },
+    {
+      "clientId": "C-100047",
+      "adviceService": "NONE",
+      "advisorId": null,
+      "enrolledDate": null,
+      "riskTolerance": "AGGRESSIVE",
+      "goals": []
+    },
+    {
+      "clientId": "C-100048",
+      "adviceService": "PERSONAL_ADVISOR",
+      "advisorId": "ADV-122",
+      "enrolledDate": "2018-06-24",
+      "riskTolerance": "MODERATELY_AGGRESSIVE",
+      "goals": [
+        "GENERAL_SAVINGS"
+      ]
+    },
+    {
+      "clientId": "C-100049",
+      "adviceService": "PERSONAL_ADVISOR_SELECT",
+      "advisorId": "ADV-117",
+      "enrolledDate": "2023-06-17",
+      "riskTolerance": "CONSERVATIVE",
+      "goals": [
+        "EDUCATION"
+      ]
+    },
+    {
+      "clientId": "C-100050",
+      "adviceService": "NONE",
+      "advisorId": null,
+      "enrolledDate": null,
+      "riskTolerance": "CONSERVATIVE",
+      "goals": []
+    },
+    {
+      "clientId": "C-100051",
+      "adviceService": "PERSONAL_ADVISOR",
+      "advisorId": "ADV-109",
+      "enrolledDate": "2015-03-16",
+      "riskTolerance": "MODERATE",
+      "goals": [
+        "EMERGENCY_FUND",
+        "HOME_PURCHASE",
+        "RETIREMENT"
+      ]
+    },
+    {
+      "clientId": "C-100052",
+      "adviceService": "PERSONAL_ADVISOR_WEALTH_MGMT",
+      "advisorId": "ADV-140",
+      "enrolledDate": "2015-03-19",
+      "riskTolerance": "MODERATE",
+      "goals": [
+        "EMERGENCY_FUND"
+      ]
+    },
+    {
+      "clientId": "C-100053",
+      "adviceService": "PERSONAL_ADVISOR_SELECT",
+      "advisorId": "ADV-105",
+      "enrolledDate": "2026-03-26",
+      "riskTolerance": "MODERATELY_AGGRESSIVE",
+      "goals": [
+        "RETIREMENT"
+      ]
+    },
+    {
+      "clientId": "C-100054",
+      "adviceService": "NONE",
+      "advisorId": null,
+      "enrolledDate": null,
+      "riskTolerance": null,
+      "goals": []
+    },
+    {
+      "clientId": "C-100055",
+      "adviceService": "DIGITAL_ADVISOR",
+      "advisorId": null,
+      "enrolledDate": "2017-05-26",
+      "riskTolerance": "MODERATE",
+      "goals": [
+        "RETIREMENT",
+        "EMERGENCY_FUND"
+      ]
+    },
+    {
+      "clientId": "C-100056",
+      "adviceService": "NONE",
+      "advisorId": null,
+      "enrolledDate": null,
+      "riskTolerance": "CONSERVATIVE",
+      "goals": []
+    },
+    {
+      "clientId": "C-100057",
+      "adviceService": "NONE",
+      "advisorId": null,
+      "enrolledDate": null,
+      "riskTolerance": "AGGRESSIVE",
+      "goals": []
+    },
+    {
+      "clientId": "C-100058",
+      "adviceService": "PERSONAL_ADVISOR_WEALTH_MGMT",
+      "advisorId": "ADV-119",
+      "enrolledDate": "2016-01-02",
+      "riskTolerance": "CONSERVATIVE",
+      "goals": [
+        "HOME_PURCHASE"
+      ]
+    },
+    {
+      "clientId": "C-100059",
+      "adviceService": "NONE",
+      "advisorId": null,
+      "enrolledDate": null,
+      "riskTolerance": null,
+      "goals": []
+    },
+    {
+      "clientId": "C-100060",
+      "adviceService": "NONE",
+      "advisorId": null,
+      "enrolledDate": null,
+      "riskTolerance": null,
+      "goals": []
+    },
+    {
+      "clientId": "C-100061",
+      "adviceService": "NONE",
+      "advisorId": null,
+      "enrolledDate": null,
+      "riskTolerance": null,
+      "goals": []
+    },
+    {
+      "clientId": "C-100062",
+      "adviceService": "NONE",
+      "advisorId": null,
+      "enrolledDate": null,
+      "riskTolerance": null,
+      "goals": []
+    },
+    {
+      "clientId": "C-100063",
+      "adviceService": "DIGITAL_ADVISOR",
+      "advisorId": null,
+      "enrolledDate": "2017-02-18",
+      "riskTolerance": "CONSERVATIVE",
+      "goals": [
+        "EMERGENCY_FUND"
+      ]
+    },
+    {
+      "clientId": "C-100064",
+      "adviceService": "NONE",
+      "advisorId": null,
+      "enrolledDate": null,
+      "riskTolerance": null,
+      "goals": []
+    },
+    {
+      "clientId": "C-100065",
+      "adviceService": "PERSONAL_ADVISOR",
+      "advisorId": "ADV-105",
+      "enrolledDate": "2021-12-13",
+      "riskTolerance": "CONSERVATIVE",
+      "goals": [
+        "EDUCATION",
+        "GENERAL_SAVINGS",
+        "HOME_PURCHASE"
+      ]
+    },
+    {
+      "clientId": "C-100066",
+      "adviceService": "NONE",
+      "advisorId": null,
+      "enrolledDate": null,
+      "riskTolerance": "CONSERVATIVE",
+      "goals": []
+    },
+    {
+      "clientId": "C-100067",
+      "adviceService": "PERSONAL_ADVISOR_SELECT",
+      "advisorId": "ADV-119",
+      "enrolledDate": "2020-06-10",
+      "riskTolerance": "AGGRESSIVE",
+      "goals": [
+        "WEALTH_TRANSFER",
+        "EMERGENCY_FUND"
+      ]
+    },
+    {
+      "clientId": "C-100068",
+      "adviceService": "NONE",
+      "advisorId": null,
+      "enrolledDate": null,
+      "riskTolerance": "MODERATE",
+      "goals": []
+    },
+    {
+      "clientId": "C-100069",
+      "adviceService": "NONE",
+      "advisorId": null,
+      "enrolledDate": null,
+      "riskTolerance": null,
+      "goals": []
+    },
+    {
+      "clientId": "C-100070",
+      "adviceService": "PERSONAL_ADVISOR",
+      "advisorId": "ADV-113",
+      "enrolledDate": "2019-03-14",
+      "riskTolerance": "MODERATELY_AGGRESSIVE",
+      "goals": [
+        "EMERGENCY_FUND",
+        "EDUCATION"
+      ]
+    },
+    {
+      "clientId": "C-100071",
+      "adviceService": "NONE",
+      "advisorId": null,
+      "enrolledDate": null,
+      "riskTolerance": null,
+      "goals": []
+    },
+    {
+      "clientId": "C-100072",
+      "adviceService": "DIGITAL_ADVISOR",
+      "advisorId": null,
+      "enrolledDate": "2018-04-25",
+      "riskTolerance": "MODERATE",
+      "goals": [
+        "WEALTH_TRANSFER"
+      ]
+    },
+    {
+      "clientId": "C-100073",
+      "adviceService": "NONE",
+      "advisorId": null,
+      "enrolledDate": null,
+      "riskTolerance": "CONSERVATIVE",
+      "goals": []
+    },
+    {
+      "clientId": "C-100074",
+      "adviceService": "NONE",
+      "advisorId": null,
+      "enrolledDate": null,
+      "riskTolerance": null,
+      "goals": []
+    },
+    {
+      "clientId": "C-100075",
+      "adviceService": "DIGITAL_ADVISOR",
+      "advisorId": null,
+      "enrolledDate": "2023-02-03",
+      "riskTolerance": "CONSERVATIVE",
+      "goals": [
+        "RETIREMENT",
+        "HOME_PURCHASE"
+      ]
+    },
+    {
+      "clientId": "C-100076",
+      "adviceService": "DIGITAL_ADVISOR",
+      "advisorId": null,
+      "enrolledDate": "2022-09-17",
+      "riskTolerance": "AGGRESSIVE",
+      "goals": [
+        "EDUCATION",
+        "WEALTH_TRANSFER",
+        "RETIREMENT"
+      ]
+    },
+    {
+      "clientId": "C-100077",
+      "adviceService": "NONE",
+      "advisorId": null,
+      "enrolledDate": null,
+      "riskTolerance": "AGGRESSIVE",
+      "goals": []
+    },
+    {
+      "clientId": "C-100078",
+      "adviceService": "NONE",
+      "advisorId": null,
+      "enrolledDate": null,
+      "riskTolerance": "MODERATELY_AGGRESSIVE",
+      "goals": []
+    },
+    {
+      "clientId": "C-100079",
+      "adviceService": "NONE",
+      "advisorId": null,
+      "enrolledDate": null,
+      "riskTolerance": "CONSERVATIVE",
+      "goals": []
+    },
+    {
+      "clientId": "C-100080",
+      "adviceService": "NONE",
+      "advisorId": null,
+      "enrolledDate": null,
+      "riskTolerance": null,
+      "goals": []
+    },
+    {
+      "clientId": "C-100081",
+      "adviceService": "PERSONAL_ADVISOR",
+      "advisorId": "ADV-103",
+      "enrolledDate": "2016-08-06",
+      "riskTolerance": "AGGRESSIVE",
+      "goals": [
+        "WEALTH_TRANSFER"
+      ]
+    },
+    {
+      "clientId": "C-100082",
+      "adviceService": "NONE",
+      "advisorId": null,
+      "enrolledDate": null,
+      "riskTolerance": "MODERATELY_AGGRESSIVE",
+      "goals": []
+    },
+    {
+      "clientId": "C-100083",
+      "adviceService": "PERSONAL_ADVISOR",
+      "advisorId": "ADV-126",
+      "enrolledDate": "2017-04-07",
+      "riskTolerance": "MODERATELY_AGGRESSIVE",
+      "goals": [
+        "WEALTH_TRANSFER",
+        "EDUCATION",
+        "EMERGENCY_FUND"
+      ]
+    },
+    {
+      "clientId": "C-100084",
+      "adviceService": "NONE",
+      "advisorId": null,
+      "enrolledDate": null,
+      "riskTolerance": "MODERATELY_AGGRESSIVE",
+      "goals": []
+    },
+    {
+      "clientId": "C-100085",
+      "adviceService": "NONE",
+      "advisorId": "ADV-117",
+      "enrolledDate": null,
+      "riskTolerance": null,
+      "goals": []
+    },
+    {
+      "clientId": "C-100086",
+      "adviceService": "PERSONAL_ADVISOR",
+      "advisorId": "ADV-110",
+      "enrolledDate": "2026-05-04",
+      "riskTolerance": "AGGRESSIVE",
+      "goals": [
+        "EDUCATION",
+        "RETIREMENT"
+      ]
+    },
+    {
+      "clientId": "C-100087",
+      "adviceService": "NONE",
+      "advisorId": null,
+      "enrolledDate": null,
+      "riskTolerance": null,
+      "goals": []
+    },
+    {
+      "clientId": "C-100088",
+      "adviceService": "NONE",
+      "advisorId": null,
+      "enrolledDate": null,
+      "riskTolerance": null,
+      "goals": []
+    },
+    {
+      "clientId": "C-100089",
+      "adviceService": "PERSONAL_ADVISOR",
+      "advisorId": "ADV-138",
+      "enrolledDate": "2026-06-28",
+      "riskTolerance": "MODERATELY_AGGRESSIVE",
+      "goals": [
+        "WEALTH_TRANSFER",
+        "HOME_PURCHASE",
+        "EDUCATION"
+      ]
+    },
+    {
+      "clientId": "C-100090",
+      "adviceService": "NONE",
+      "advisorId": null,
+      "enrolledDate": null,
+      "riskTolerance": null,
+      "goals": []
+    },
+    {
+      "clientId": "C-100091",
+      "adviceService": "NONE",
+      "advisorId": null,
+      "enrolledDate": null,
+      "riskTolerance": "MODERATE",
+      "goals": []
+    },
+    {
+      "clientId": "C-100092",
+      "adviceService": "DIGITAL_ADVISOR",
+      "advisorId": null,
+      "enrolledDate": "2019-12-18",
+      "riskTolerance": "MODERATE",
+      "goals": [
+        "HOME_PURCHASE",
+        "GENERAL_SAVINGS",
+        "WEALTH_TRANSFER"
+      ]
+    },
+    {
+      "clientId": "C-100094",
+      "adviceService": "NONE",
+      "advisorId": null,
+      "enrolledDate": null,
+      "riskTolerance": null,
+      "goals": []
+    },
+    {
+      "clientId": "C-100095",
+      "adviceService": "DIGITAL_ADVISOR",
+      "advisorId": null,
+      "enrolledDate": "2016-07-05",
+      "riskTolerance": "MODERATELY_AGGRESSIVE",
+      "goals": [
+        "EDUCATION"
+      ]
+    },
+    {
+      "clientId": "C-100096",
+      "adviceService": "NONE",
+      "advisorId": null,
+      "enrolledDate": null,
+      "riskTolerance": null,
+      "goals": []
+    },
+    {
+      "clientId": "C-100097",
+      "adviceService": "NONE",
+      "advisorId": null,
+      "enrolledDate": null,
+      "riskTolerance": "AGGRESSIVE",
+      "goals": []
+    },
+    {
+      "clientId": "C-100098",
+      "adviceService": "NONE",
+      "advisorId": null,
+      "enrolledDate": null,
+      "riskTolerance": "AGGRESSIVE",
+      "goals": []
+    },
+    {
+      "clientId": "C-100099",
+      "adviceService": "NONE",
+      "advisorId": null,
+      "enrolledDate": null,
+      "riskTolerance": "MODERATELY_AGGRESSIVE",
+      "goals": []
+    },
+    {
+      "clientId": "C-100100",
+      "adviceService": "NONE",
+      "advisorId": null,
+      "enrolledDate": null,
+      "riskTolerance": null,
+      "goals": []
+    },
+    {
+      "clientId": "C-100101",
+      "adviceService": "DIGITAL_ADVISOR",
+      "advisorId": null,
+      "enrolledDate": "2017-01-16",
+      "riskTolerance": "MODERATE",
+      "goals": [
+        "WEALTH_TRANSFER",
+        "EMERGENCY_FUND"
+      ]
+    },
+    {
+      "clientId": "C-100102",
+      "adviceService": "NONE",
+      "advisorId": null,
+      "enrolledDate": null,
+      "riskTolerance": "MODERATE",
+      "goals": []
+    },
+    {
+      "clientId": "C-100103",
+      "adviceService": "NONE",
+      "advisorId": null,
+      "enrolledDate": null,
+      "riskTolerance": null,
+      "goals": []
+    },
+    {
+      "clientId": "C-100104",
+      "adviceService": "NONE",
+      "advisorId": null,
+      "enrolledDate": null,
+      "riskTolerance": null,
+      "goals": []
+    },
+    {
+      "clientId": "C-100105",
+      "adviceService": "NONE",
+      "advisorId": null,
+      "enrolledDate": null,
+      "riskTolerance": null,
+      "goals": []
+    },
+    {
+      "clientId": "C-100106",
+      "adviceService": "NONE",
+      "advisorId": null,
+      "enrolledDate": null,
+      "riskTolerance": "CONSERVATIVE",
+      "goals": []
+    },
+    {
+      "clientId": "C-100107",
+      "adviceService": "PERSONAL_ADVISOR_SELECT",
+      "advisorId": "ADV-101",
+      "enrolledDate": "2017-10-21",
+      "riskTolerance": "MODERATE",
+      "goals": [
+        "HOME_PURCHASE",
+        "RETIREMENT",
+        "EDUCATION"
+      ]
+    },
+    {
+      "clientId": "C-100108",
+      "adviceService": "NONE",
+      "advisorId": null,
+      "enrolledDate": null,
+      "riskTolerance": "MODERATE",
+      "goals": []
+    },
+    {
+      "clientId": "C-100109",
+      "adviceService": "NONE",
+      "advisorId": null,
+      "enrolledDate": null,
+      "riskTolerance": "CONSERVATIVE",
+      "goals": []
+    },
+    {
+      "clientId": "C-100110",
+      "adviceService": "NONE",
+      "advisorId": null,
+      "enrolledDate": null,
+      "riskTolerance": "MODERATE",
+      "goals": []
+    },
+    {
+      "clientId": "C-100111",
+      "adviceService": "DIGITAL_ADVISOR",
+      "advisorId": null,
+      "enrolledDate": "2015-12-11",
+      "riskTolerance": "AGGRESSIVE",
+      "goals": [
+        "WEALTH_TRANSFER",
+        "EDUCATION",
+        "HOME_PURCHASE"
+      ]
+    },
+    {
+      "clientId": "C-100112",
+      "adviceService": "NONE",
+      "advisorId": null,
+      "enrolledDate": null,
+      "riskTolerance": null,
+      "goals": []
+    },
+    {
+      "clientId": "C-100113",
+      "adviceService": "NONE",
+      "advisorId": null,
+      "enrolledDate": null,
+      "riskTolerance": "MODERATE",
+      "goals": []
+    },
+    {
+      "clientId": "C-100114",
+      "adviceService": "PERSONAL_ADVISOR",
+      "advisorId": "ADV-102",
+      "enrolledDate": "2021-05-19",
+      "riskTolerance": "CONSERVATIVE",
+      "goals": [
+        "EDUCATION",
+        "HOME_PURCHASE",
+        "RETIREMENT"
+      ]
+    },
+    {
+      "clientId": "C-100115",
+      "adviceService": "NONE",
+      "advisorId": null,
+      "enrolledDate": null,
+      "riskTolerance": "MODERATE",
+      "goals": []
+    },
+    {
+      "clientId": "C-100116",
+      "adviceService": "NONE",
+      "advisorId": null,
+      "enrolledDate": null,
+      "riskTolerance": "MODERATE",
+      "goals": []
+    },
+    {
+      "clientId": "C-100117",
+      "adviceService": "NONE",
+      "advisorId": null,
+      "enrolledDate": null,
+      "riskTolerance": "CONSERVATIVE",
+      "goals": []
+    },
+    {
+      "clientId": "C-100118",
+      "adviceService": "NONE",
+      "advisorId": null,
+      "enrolledDate": null,
+      "riskTolerance": "MODERATELY_AGGRESSIVE",
+      "goals": []
+    },
+    {
+      "clientId": "C-100119",
+      "adviceService": "NONE",
+      "advisorId": null,
+      "enrolledDate": null,
+      "riskTolerance": null,
+      "goals": []
+    },
+    {
+      "clientId": "C-100120",
+      "adviceService": "NONE",
+      "advisorId": null,
+      "enrolledDate": null,
+      "riskTolerance": null,
+      "goals": []
+    },
+    {
+      "clientId": "C-100121",
+      "adviceService": "PERSONAL_ADVISOR",
+      "advisorId": "ADV-129",
+      "enrolledDate": "2017-01-08",
+      "riskTolerance": "MODERATELY_AGGRESSIVE",
+      "goals": [
+        "GENERAL_SAVINGS",
+        "EDUCATION"
+      ]
+    },
+    {
+      "clientId": "C-100122",
+      "adviceService": "DIGITAL_ADVISOR",
+      "advisorId": null,
+      "enrolledDate": "2015-02-23",
+      "riskTolerance": "MODERATE",
+      "goals": [
+        "HOME_PURCHASE",
+        "WEALTH_TRANSFER",
+        "EDUCATION"
+      ]
+    },
+    {
+      "clientId": "C-100123",
+      "adviceService": "DIGITAL_ADVISOR",
+      "advisorId": null,
+      "enrolledDate": "2021-06-10",
+      "riskTolerance": "AGGRESSIVE",
+      "goals": [
+        "HOME_PURCHASE",
+        "GENERAL_SAVINGS",
+        "WEALTH_TRANSFER"
+      ]
+    },
+    {
+      "clientId": "C-100124",
+      "adviceService": "NONE",
+      "advisorId": null,
+      "enrolledDate": null,
+      "riskTolerance": "AGGRESSIVE",
+      "goals": []
+    },
+    {
+      "clientId": "C-100125",
+      "adviceService": "NONE",
+      "advisorId": null,
+      "enrolledDate": null,
+      "riskTolerance": "AGGRESSIVE",
+      "goals": []
+    },
+    {
+      "clientId": "C-100126",
+      "adviceService": "NONE",
+      "advisorId": null,
+      "enrolledDate": null,
+      "riskTolerance": "MODERATELY_AGGRESSIVE",
+      "goals": []
+    },
+    {
+      "clientId": "C-100127",
+      "adviceService": "NONE",
+      "advisorId": null,
+      "enrolledDate": null,
+      "riskTolerance": "MODERATELY_AGGRESSIVE",
+      "goals": []
+    },
+    {
+      "clientId": "C-100128",
+      "adviceService": "PERSONAL_ADVISOR",
+      "advisorId": "ADV-106",
+      "enrolledDate": "2024-02-06",
+      "riskTolerance": "CONSERVATIVE",
+      "goals": [
+        "WEALTH_TRANSFER",
+        "RETIREMENT"
+      ]
+    },
+    {
+      "clientId": "C-100129",
+      "adviceService": "DIGITAL_ADVISOR",
+      "advisorId": null,
+      "enrolledDate": "2018-02-12",
+      "riskTolerance": "CONSERVATIVE",
+      "goals": [
+        "GENERAL_SAVINGS"
+      ]
+    },
+    {
+      "clientId": "C-100130",
+      "adviceService": "NONE",
+      "advisorId": null,
+      "enrolledDate": null,
+      "riskTolerance": null,
+      "goals": []
+    },
+    {
+      "clientId": "C-100131",
+      "adviceService": "NONE",
+      "advisorId": null,
+      "enrolledDate": null,
+      "riskTolerance": null,
+      "goals": []
+    },
+    {
+      "clientId": "C-100132",
+      "adviceService": "NONE",
+      "advisorId": null,
+      "enrolledDate": null,
+      "riskTolerance": "MODERATELY_AGGRESSIVE",
+      "goals": []
+    },
+    {
+      "clientId": "C-100133",
+      "adviceService": "DIGITAL_ADVISOR",
+      "advisorId": null,
+      "enrolledDate": "2024-10-01",
+      "riskTolerance": "CONSERVATIVE",
+      "goals": [
+        "EMERGENCY_FUND",
+        "GENERAL_SAVINGS"
+      ]
+    },
+    {
+      "clientId": "C-100134",
+      "adviceService": "PERSONAL_ADVISOR_SELECT",
+      "advisorId": "ADV-139",
+      "enrolledDate": "2017-01-23",
+      "riskTolerance": "CONSERVATIVE",
+      "goals": [
+        "GENERAL_SAVINGS",
+        "EDUCATION",
+        "RETIREMENT"
+      ]
+    },
+    {
+      "clientId": "C-100135",
+      "adviceService": "NONE",
+      "advisorId": null,
+      "enrolledDate": null,
+      "riskTolerance": "AGGRESSIVE",
+      "goals": []
+    },
+    {
+      "clientId": "C-100136",
+      "adviceService": "NONE",
+      "advisorId": null,
+      "enrolledDate": null,
+      "riskTolerance": "MODERATELY_AGGRESSIVE",
+      "goals": []
+    },
+    {
+      "clientId": "C-100137",
+      "adviceService": "NONE",
+      "advisorId": null,
+      "enrolledDate": null,
+      "riskTolerance": "MODERATELY_AGGRESSIVE",
+      "goals": []
+    },
+    {
+      "clientId": "C-100138",
+      "adviceService": "NONE",
+      "advisorId": null,
+      "enrolledDate": null,
+      "riskTolerance": null,
+      "goals": []
+    },
+    {
+      "clientId": "C-100139",
+      "adviceService": "DIGITAL_ADVISOR",
+      "advisorId": null,
+      "enrolledDate": "2017-02-22",
+      "riskTolerance": "MODERATELY_AGGRESSIVE",
+      "goals": [
+        "WEALTH_TRANSFER",
+        "EDUCATION",
+        "EMERGENCY_FUND"
+      ]
+    },
+    {
+      "clientId": "C-100140",
+      "adviceService": "NONE",
+      "advisorId": null,
+      "enrolledDate": null,
+      "riskTolerance": "AGGRESSIVE",
+      "goals": []
+    },
+    {
+      "clientId": "C-100141",
+      "adviceService": "NONE",
+      "advisorId": null,
+      "enrolledDate": null,
+      "riskTolerance": "AGGRESSIVE",
+      "goals": []
+    },
+    {
+      "clientId": "C-100142",
+      "adviceService": "NONE",
+      "advisorId": null,
+      "enrolledDate": null,
+      "riskTolerance": null,
+      "goals": []
+    },
+    {
+      "clientId": "C-100143",
+      "adviceService": "NONE",
+      "advisorId": null,
+      "enrolledDate": null,
+      "riskTolerance": null,
+      "goals": []
+    },
+    {
+      "clientId": "C-100144",
+      "adviceService": "NONE",
+      "advisorId": null,
+      "enrolledDate": null,
+      "riskTolerance": null,
+      "goals": []
+    },
+    {
+      "clientId": "C-100145",
+      "adviceService": "NONE",
+      "advisorId": null,
+      "enrolledDate": null,
+      "riskTolerance": "AGGRESSIVE",
+      "goals": []
+    },
+    {
+      "clientId": "C-100146",
+      "adviceService": "NONE",
+      "advisorId": null,
+      "enrolledDate": null,
+      "riskTolerance": null,
+      "goals": []
+    },
+    {
+      "clientId": "C-100147",
+      "adviceService": "DIGITAL_ADVISOR",
+      "advisorId": null,
+      "enrolledDate": "2021-10-20",
+      "riskTolerance": "AGGRESSIVE",
+      "goals": [
+        "HOME_PURCHASE",
+        "RETIREMENT",
+        "EMERGENCY_FUND"
+      ]
+    },
+    {
+      "clientId": "C-100148",
+      "adviceService": "NONE",
+      "advisorId": null,
+      "enrolledDate": null,
+      "riskTolerance": "CONSERVATIVE",
+      "goals": []
+    },
+    {
+      "clientId": "C-100149",
+      "adviceService": "NONE",
+      "advisorId": null,
+      "enrolledDate": null,
+      "riskTolerance": null,
+      "goals": []
+    },
+    {
+      "clientId": "C-100150",
+      "adviceService": "PERSONAL_ADVISOR",
+      "advisorId": "ADV-106",
+      "enrolledDate": "2017-10-11",
+      "riskTolerance": "MODERATE",
+      "goals": [
+        "EDUCATION",
+        "GENERAL_SAVINGS",
+        "HOME_PURCHASE"
+      ]
+    },
+    {
+      "clientId": "C-100151",
+      "adviceService": "PERSONAL_ADVISOR",
+      "advisorId": "ADV-123",
+      "enrolledDate": "2021-06-19",
+      "riskTolerance": "CONSERVATIVE",
+      "goals": [
+        "HOME_PURCHASE"
+      ]
+    },
+    {
+      "clientId": "C-100152",
+      "adviceService": "NONE",
+      "advisorId": null,
+      "enrolledDate": null,
+      "riskTolerance": null,
+      "goals": []
+    },
+    {
+      "clientId": "C-100153",
+      "adviceService": "NONE",
+      "advisorId": null,
+      "enrolledDate": null,
+      "riskTolerance": "CONSERVATIVE",
+      "goals": []
+    },
+    {
+      "clientId": "C-100154",
+      "adviceService": "DIGITAL_ADVISOR",
+      "advisorId": null,
+      "enrolledDate": "2023-03-21",
+      "riskTolerance": "MODERATELY_AGGRESSIVE",
+      "goals": [
+        "WEALTH_TRANSFER",
+        "RETIREMENT",
+        "HOME_PURCHASE"
+      ]
+    },
+    {
+      "clientId": "C-100155",
+      "adviceService": "NONE",
+      "advisorId": null,
+      "enrolledDate": null,
+      "riskTolerance": "AGGRESSIVE",
+      "goals": []
+    },
+    {
+      "clientId": "C-100156",
+      "adviceService": "NONE",
+      "advisorId": null,
+      "enrolledDate": null,
+      "riskTolerance": null,
+      "goals": []
+    },
+    {
+      "clientId": "C-100157",
+      "adviceService": "PERSONAL_ADVISOR",
+      "advisorId": "ADV-105",
+      "enrolledDate": "2022-01-15",
+      "riskTolerance": "MODERATELY_AGGRESSIVE",
+      "goals": [
+        "EMERGENCY_FUND"
+      ]
+    },
+    {
+      "clientId": "C-100158",
+      "adviceService": "NONE",
+      "advisorId": null,
+      "enrolledDate": null,
+      "riskTolerance": null,
+      "goals": []
+    },
+    {
+      "clientId": "C-100159",
+      "adviceService": "PERSONAL_ADVISOR",
+      "advisorId": "ADV-115",
+      "enrolledDate": "2026-08-01",
+      "riskTolerance": "MODERATE",
+      "goals": [
+        "GENERAL_SAVINGS",
+        "EMERGENCY_FUND",
+        "HOME_PURCHASE"
+      ]
+    },
+    {
+      "clientId": "C-100160",
+      "adviceService": "NONE",
+      "advisorId": null,
+      "enrolledDate": null,
+      "riskTolerance": "MODERATE",
+      "goals": []
+    },
+    {
+      "clientId": "C-100161",
+      "adviceService": "NONE",
+      "advisorId": null,
+      "enrolledDate": null,
+      "riskTolerance": "MODERATELY_AGGRESSIVE",
+      "goals": []
+    },
+    {
+      "clientId": "C-100162",
+      "adviceService": "NONE",
+      "advisorId": null,
+      "enrolledDate": null,
+      "riskTolerance": "MODERATE",
+      "goals": []
+    },
+    {
+      "clientId": "C-100163",
+      "adviceService": "NONE",
+      "advisorId": null,
+      "enrolledDate": null,
+      "riskTolerance": null,
+      "goals": []
+    },
+    {
+      "clientId": "C-100164",
+      "adviceService": "NONE",
+      "advisorId": null,
+      "enrolledDate": null,
+      "riskTolerance": null,
+      "goals": []
+    },
+    {
+      "clientId": "C-100165",
+      "adviceService": "NONE",
+      "advisorId": null,
+      "enrolledDate": null,
+      "riskTolerance": null,
+      "goals": []
+    },
+    {
+      "clientId": "C-100166",
+      "adviceService": "NONE",
+      "advisorId": null,
+      "enrolledDate": null,
+      "riskTolerance": "CONSERVATIVE",
+      "goals": []
+    },
+    {
+      "clientId": "C-100167",
+      "adviceService": "NONE",
+      "advisorId": null,
+      "enrolledDate": null,
+      "riskTolerance": null,
+      "goals": []
+    },
+    {
+      "clientId": "C-100168",
+      "adviceService": "DIGITAL_ADVISOR",
+      "advisorId": null,
+      "enrolledDate": "2021-06-17",
+      "riskTolerance": "MODERATE",
+      "goals": [
+        "HOME_PURCHASE",
+        "EMERGENCY_FUND"
+      ]
+    },
+    {
+      "clientId": "C-100169",
+      "adviceService": "NONE",
+      "advisorId": null,
+      "enrolledDate": null,
+      "riskTolerance": null,
+      "goals": []
+    },
+    {
+      "clientId": "C-100170",
+      "adviceService": "NONE",
+      "advisorId": null,
+      "enrolledDate": null,
+      "riskTolerance": null,
+      "goals": []
+    },
+    {
+      "clientId": "C-100171",
+      "adviceService": "DIGITAL_ADVISOR",
+      "advisorId": null,
+      "enrolledDate": "2016-04-18",
+      "riskTolerance": "MODERATELY_AGGRESSIVE",
+      "goals": [
+        "EMERGENCY_FUND",
+        "WEALTH_TRANSFER"
+      ]
+    },
+    {
+      "clientId": "C-100172",
+      "adviceService": "PERSONAL_ADVISOR_SELECT",
+      "advisorId": "ADV-101",
+      "enrolledDate": "2020-10-20",
+      "riskTolerance": "MODERATE",
+      "goals": [
+        "GENERAL_SAVINGS",
+        "EMERGENCY_FUND"
+      ]
+    },
+    {
+      "clientId": "C-100173",
+      "adviceService": "PERSONAL_ADVISOR_SELECT",
+      "advisorId": "ADV-133",
+      "enrolledDate": "2019-04-27",
+      "riskTolerance": "MODERATELY_AGGRESSIVE",
+      "goals": [
+        "RETIREMENT",
+        "EDUCATION"
+      ]
+    },
+    {
+      "clientId": "C-100174",
+      "adviceService": "NONE",
+      "advisorId": null,
+      "enrolledDate": null,
+      "riskTolerance": "CONSERVATIVE",
+      "goals": []
+    },
+    {
+      "clientId": "C-100175",
+      "adviceService": "NONE",
+      "advisorId": null,
+      "enrolledDate": null,
+      "riskTolerance": null,
+      "goals": []
+    },
+    {
+      "clientId": "C-100176",
+      "adviceService": "PERSONAL_ADVISOR_WEALTH_MGMT",
+      "advisorId": "ADV-118",
+      "enrolledDate": "2018-03-25",
+      "riskTolerance": "MODERATE",
+      "goals": [
+        "RETIREMENT",
+        "EDUCATION"
+      ]
+    },
+    {
+      "clientId": "C-100177",
+      "adviceService": "DIGITAL_ADVISOR",
+      "advisorId": null,
+      "enrolledDate": "2018-10-09",
+      "riskTolerance": "MODERATE",
+      "goals": [
+        "EMERGENCY_FUND",
+        "WEALTH_TRANSFER",
+        "GENERAL_SAVINGS"
+      ]
+    },
+    {
+      "clientId": "C-100178",
+      "adviceService": "NONE",
+      "advisorId": null,
+      "enrolledDate": null,
+      "riskTolerance": null,
+      "goals": []
+    },
+    {
+      "clientId": "C-100179",
+      "adviceService": "PERSONAL_ADVISOR_SELECT",
+      "advisorId": "ADV-129",
+      "enrolledDate": "2023-04-23",
+      "riskTolerance": "MODERATE",
+      "goals": [
+        "RETIREMENT",
+        "EDUCATION"
+      ]
+    },
+    {
+      "clientId": "C-100180",
+      "adviceService": "NONE",
+      "advisorId": null,
+      "enrolledDate": null,
+      "riskTolerance": "MODERATE",
+      "goals": []
+    },
+    {
+      "clientId": "C-100181",
+      "adviceService": "DIGITAL_ADVISOR",
+      "advisorId": null,
+      "enrolledDate": "2017-11-10",
+      "riskTolerance": "CONSERVATIVE",
+      "goals": [
+        "RETIREMENT",
+        "HOME_PURCHASE"
+      ]
+    },
+    {
+      "clientId": "C-100182",
+      "adviceService": "NONE",
+      "advisorId": null,
+      "enrolledDate": null,
+      "riskTolerance": "AGGRESSIVE",
+      "goals": []
+    },
+    {
+      "clientId": "C-100183",
+      "adviceService": "PERSONAL_ADVISOR",
+      "advisorId": "ADV-130",
+      "enrolledDate": "2022-06-08",
+      "riskTolerance": "AGGRESSIVE",
+      "goals": [
+        "EMERGENCY_FUND"
+      ]
+    },
+    {
+      "clientId": "C-100184",
+      "adviceService": "NONE",
+      "advisorId": null,
+      "enrolledDate": null,
+      "riskTolerance": null,
+      "goals": []
+    },
+    {
+      "clientId": "C-100185",
+      "adviceService": "NONE",
+      "advisorId": null,
+      "enrolledDate": null,
+      "riskTolerance": "AGGRESSIVE",
+      "goals": []
+    },
+    {
+      "clientId": "C-100186",
+      "adviceService": "NONE",
+      "advisorId": null,
+      "enrolledDate": null,
+      "riskTolerance": "MODERATELY_AGGRESSIVE",
+      "goals": []
+    },
+    {
+      "clientId": "C-100187",
+      "adviceService": "NONE",
+      "advisorId": null,
+      "enrolledDate": null,
+      "riskTolerance": null,
+      "goals": []
+    },
+    {
+      "clientId": "C-100188",
+      "adviceService": "NONE",
+      "advisorId": null,
+      "enrolledDate": null,
+      "riskTolerance": null,
+      "goals": []
+    },
+    {
+      "clientId": "C-100189",
+      "adviceService": "NONE",
+      "advisorId": null,
+      "enrolledDate": null,
+      "riskTolerance": null,
+      "goals": []
+    },
+    {
+      "clientId": "C-100190",
+      "adviceService": "DIGITAL_ADVISOR",
+      "advisorId": null,
+      "enrolledDate": "2019-11-15",
+      "riskTolerance": "AGGRESSIVE",
+      "goals": [
+        "WEALTH_TRANSFER",
+        "RETIREMENT"
+      ]
+    },
+    {
+      "clientId": "C-100191",
+      "adviceService": "PERSONAL_ADVISOR_SELECT",
+      "advisorId": "ADV-101",
+      "enrolledDate": "2017-04-03",
+      "riskTolerance": "MODERATE",
+      "goals": [
+        "RETIREMENT",
+        "WEALTH_TRANSFER"
+      ]
+    },
+    {
+      "clientId": "C-100192",
+      "adviceService": "NONE",
+      "advisorId": null,
+      "enrolledDate": null,
+      "riskTolerance": "MODERATELY_AGGRESSIVE",
+      "goals": []
+    },
+    {
+      "clientId": "C-100193",
+      "adviceService": "NONE",
+      "advisorId": null,
+      "enrolledDate": null,
+      "riskTolerance": null,
+      "goals": []
+    },
+    {
+      "clientId": "C-100194",
+      "adviceService": "NONE",
+      "advisorId": null,
+      "enrolledDate": null,
+      "riskTolerance": null,
+      "goals": []
+    },
+    {
+      "clientId": "C-100195",
+      "adviceService": "NONE",
+      "advisorId": null,
+      "enrolledDate": null,
+      "riskTolerance": "AGGRESSIVE",
+      "goals": []
+    },
+    {
+      "clientId": "C-100196",
+      "adviceService": "PERSONAL_ADVISOR",
+      "advisorId": "ADV-102",
+      "enrolledDate": "2023-02-08",
+      "riskTolerance": "CONSERVATIVE",
+      "goals": [
+        "GENERAL_SAVINGS",
+        "EDUCATION",
+        "HOME_PURCHASE"
+      ]
+    },
+    {
+      "clientId": "C-100197",
+      "adviceService": "DIGITAL_ADVISOR",
+      "advisorId": null,
+      "enrolledDate": "2016-04-28",
+      "riskTolerance": "MODERATE",
+      "goals": [
+        "HOME_PURCHASE"
+      ]
+    },
+    {
+      "clientId": "C-100198",
+      "adviceService": "NONE",
+      "advisorId": null,
+      "enrolledDate": null,
+      "riskTolerance": "AGGRESSIVE",
+      "goals": []
+    },
+    {
+      "clientId": "C-100199",
+      "adviceService": "NONE",
+      "advisorId": null,
+      "enrolledDate": null,
+      "riskTolerance": null,
+      "goals": []
+    },
+    {
+      "clientId": "C-100200",
+      "adviceService": "NONE",
+      "advisorId": null,
+      "enrolledDate": null,
+      "riskTolerance": "CONSERVATIVE",
+      "goals": []
+    },
+    {
+      "clientId": "C-100201",
+      "adviceService": "PERSONAL_ADVISOR_WEALTH_MGMT",
+      "advisorId": "ADV-102",
+      "enrolledDate": "2022-03-07",
+      "riskTolerance": "MODERATELY_AGGRESSIVE",
+      "goals": [
+        "GENERAL_SAVINGS",
+        "RETIREMENT",
+        "HOME_PURCHASE"
+      ]
+    },
+    {
+      "clientId": "C-100202",
+      "adviceService": "DIGITAL_ADVISOR",
+      "advisorId": null,
+      "enrolledDate": "2018-01-31",
+      "riskTolerance": "AGGRESSIVE",
+      "goals": [
+        "EMERGENCY_FUND",
+        "HOME_PURCHASE",
+        "EDUCATION"
+      ]
+    },
+    {
+      "clientId": "C-100203",
+      "adviceService": "NONE",
+      "advisorId": null,
+      "enrolledDate": null,
+      "riskTolerance": null,
+      "goals": []
+    },
+    {
+      "clientId": "C-100204",
+      "adviceService": "PERSONAL_ADVISOR",
+      "advisorId": "ADV-107",
+      "enrolledDate": "2026-05-09",
+      "riskTolerance": "MODERATELY_AGGRESSIVE",
+      "goals": [
+        "WEALTH_TRANSFER",
+        "EDUCATION"
+      ]
+    },
+    {
+      "clientId": "C-100205",
+      "adviceService": "NONE",
+      "advisorId": null,
+      "enrolledDate": null,
+      "riskTolerance": "MODERATELY_AGGRESSIVE",
+      "goals": []
+    },
+    {
+      "clientId": "C-100206",
+      "adviceService": "NONE",
+      "advisorId": null,
+      "enrolledDate": null,
+      "riskTolerance": null,
+      "goals": []
+    },
+    {
+      "clientId": "C-100207",
+      "adviceService": "DIGITAL_ADVISOR",
+      "advisorId": null,
+      "enrolledDate": "2024-07-05",
+      "riskTolerance": "MODERATE",
+      "goals": [
+        "EMERGENCY_FUND",
+        "WEALTH_TRANSFER"
+      ]
+    },
+    {
+      "clientId": "C-100208",
+      "adviceService": "NONE",
+      "advisorId": null,
+      "enrolledDate": null,
+      "riskTolerance": "CONSERVATIVE",
+      "goals": []
+    },
+    {
+      "clientId": "C-100209",
+      "adviceService": "PERSONAL_ADVISOR",
+      "advisorId": "ADV-112",
+      "enrolledDate": "2025-10-01",
+      "riskTolerance": "MODERATELY_AGGRESSIVE",
+      "goals": [
+        "EMERGENCY_FUND"
+      ]
+    },
+    {
+      "clientId": "C-100210",
+      "adviceService": "PERSONAL_ADVISOR",
+      "advisorId": "ADV-107",
+      "enrolledDate": "2017-12-19",
+      "riskTolerance": "AGGRESSIVE",
+      "goals": [
+        "HOME_PURCHASE"
+      ]
+    },
+    {
+      "clientId": "C-100211",
+      "adviceService": "PERSONAL_ADVISOR",
+      "advisorId": "ADV-100",
+      "enrolledDate": "2017-12-03",
+      "riskTolerance": "MODERATELY_AGGRESSIVE",
+      "goals": [
+        "GENERAL_SAVINGS",
+        "HOME_PURCHASE"
+      ]
+    },
+    {
+      "clientId": "C-100212",
+      "adviceService": "DIGITAL_ADVISOR",
+      "advisorId": null,
+      "enrolledDate": "2016-01-08",
+      "riskTolerance": "CONSERVATIVE",
+      "goals": [
+        "EDUCATION",
+        "EMERGENCY_FUND",
+        "WEALTH_TRANSFER"
+      ]
+    },
+    {
+      "clientId": "C-100213",
+      "adviceService": "PERSONAL_ADVISOR_WEALTH_MGMT",
+      "advisorId": "ADV-107",
+      "enrolledDate": "2015-01-12",
+      "riskTolerance": "MODERATELY_AGGRESSIVE",
+      "goals": [
+        "WEALTH_TRANSFER",
+        "HOME_PURCHASE",
+        "GENERAL_SAVINGS"
+      ]
+    },
+    {
+      "clientId": "C-100214",
+      "adviceService": "NONE",
+      "advisorId": null,
+      "enrolledDate": null,
+      "riskTolerance": "MODERATE",
+      "goals": []
+    },
+    {
+      "clientId": "C-100215",
+      "adviceService": "DIGITAL_ADVISOR",
+      "advisorId": null,
+      "enrolledDate": "2017-05-21",
+      "riskTolerance": "MODERATELY_AGGRESSIVE",
+      "goals": [
+        "RETIREMENT",
+        "EDUCATION",
+        "WEALTH_TRANSFER"
+      ]
+    },
+    {
+      "clientId": "C-100216",
+      "adviceService": "PERSONAL_ADVISOR_SELECT",
+      "advisorId": "ADV-106",
+      "enrolledDate": "2021-01-29",
+      "riskTolerance": "AGGRESSIVE",
+      "goals": [
+        "HOME_PURCHASE",
+        "GENERAL_SAVINGS",
+        "RETIREMENT"
+      ]
+    },
+    {
+      "clientId": "C-100217",
+      "adviceService": "PERSONAL_ADVISOR_SELECT",
+      "advisorId": "ADV-122",
+      "enrolledDate": "2023-02-04",
+      "riskTolerance": "MODERATE",
+      "goals": [
+        "EMERGENCY_FUND",
+        "EDUCATION"
+      ]
+    },
+    {
+      "clientId": "C-100218",
+      "adviceService": "PERSONAL_ADVISOR_WEALTH_MGMT",
+      "advisorId": "ADV-121",
+      "enrolledDate": "2024-12-16",
+      "riskTolerance": "CONSERVATIVE",
+      "goals": [
+        "RETIREMENT",
+        "EDUCATION"
+      ]
+    },
+    {
+      "clientId": "C-100219",
+      "adviceService": "DIGITAL_ADVISOR",
+      "advisorId": null,
+      "enrolledDate": "2017-06-07",
+      "riskTolerance": "CONSERVATIVE",
+      "goals": [
+        "HOME_PURCHASE"
+      ]
+    },
+    {
+      "clientId": "C-100220",
+      "adviceService": "NONE",
+      "advisorId": null,
+      "enrolledDate": null,
+      "riskTolerance": null,
+      "goals": []
+    },
+    {
+      "clientId": "C-100221",
+      "adviceService": "NONE",
+      "advisorId": null,
+      "enrolledDate": null,
+      "riskTolerance": null,
+      "goals": []
+    },
+    {
+      "clientId": "C-100222",
+      "adviceService": "DIGITAL_ADVISOR",
+      "advisorId": null,
+      "enrolledDate": "2017-05-12",
+      "riskTolerance": "MODERATELY_AGGRESSIVE",
+      "goals": [
+        "EDUCATION",
+        "WEALTH_TRANSFER"
+      ]
+    },
+    {
+      "clientId": "C-100223",
+      "adviceService": "NONE",
+      "advisorId": null,
+      "enrolledDate": null,
+      "riskTolerance": "AGGRESSIVE",
+      "goals": []
+    },
+    {
+      "clientId": "C-100224",
+      "adviceService": "NONE",
+      "advisorId": null,
+      "enrolledDate": null,
+      "riskTolerance": null,
+      "goals": []
+    },
+    {
+      "clientId": "C-100225",
+      "adviceService": "NONE",
+      "advisorId": null,
+      "enrolledDate": null,
+      "riskTolerance": null,
+      "goals": []
+    },
+    {
+      "clientId": "C-100226",
+      "adviceService": "DIGITAL_ADVISOR",
+      "advisorId": null,
+      "enrolledDate": "2023-10-28",
+      "riskTolerance": "CONSERVATIVE",
+      "goals": [
+        "EMERGENCY_FUND",
+        "EDUCATION",
+        "GENERAL_SAVINGS"
+      ]
+    },
+    {
+      "clientId": "C-100227",
+      "adviceService": "NONE",
+      "advisorId": null,
+      "enrolledDate": null,
+      "riskTolerance": null,
+      "goals": []
+    },
+    {
+      "clientId": "C-100228",
+      "adviceService": "PERSONAL_ADVISOR_SELECT",
+      "advisorId": "ADV-108",
+      "enrolledDate": "2019-12-06",
+      "riskTolerance": "CONSERVATIVE",
+      "goals": [
+        "GENERAL_SAVINGS",
+        "EDUCATION",
+        "HOME_PURCHASE"
+      ]
+    },
+    {
+      "clientId": "C-100229",
+      "adviceService": "NONE",
+      "advisorId": null,
+      "enrolledDate": null,
+      "riskTolerance": null,
+      "goals": []
+    },
+    {
+      "clientId": "C-100230",
+      "adviceService": "NONE",
+      "advisorId": null,
+      "enrolledDate": null,
+      "riskTolerance": null,
+      "goals": []
+    },
+    {
+      "clientId": "C-100231",
+      "adviceService": "DIGITAL_ADVISOR",
+      "advisorId": null,
+      "enrolledDate": "2016-03-06",
+      "riskTolerance": "MODERATELY_AGGRESSIVE",
+      "goals": [
+        "RETIREMENT"
+      ]
+    },
+    {
+      "clientId": "C-100232",
+      "adviceService": "NONE",
+      "advisorId": null,
+      "enrolledDate": null,
+      "riskTolerance": "AGGRESSIVE",
+      "goals": []
+    },
+    {
+      "clientId": "C-100233",
+      "adviceService": "DIGITAL_ADVISOR",
+      "advisorId": null,
+      "enrolledDate": "2017-05-27",
+      "riskTolerance": "CONSERVATIVE",
+      "goals": [
+        "RETIREMENT"
+      ]
+    },
+    {
+      "clientId": "C-100234",
+      "adviceService": "NONE",
+      "advisorId": null,
+      "enrolledDate": null,
+      "riskTolerance": "MODERATELY_AGGRESSIVE",
+      "goals": []
+    },
+    {
+      "clientId": "C-100235",
+      "adviceService": "DIGITAL_ADVISOR",
+      "advisorId": null,
+      "enrolledDate": "2018-04-15",
+      "riskTolerance": "CONSERVATIVE",
+      "goals": [
+        "HOME_PURCHASE"
+      ]
+    },
+    {
+      "clientId": "C-100236",
+      "adviceService": "PERSONAL_ADVISOR",
+      "advisorId": "ADV-124",
+      "enrolledDate": "2017-06-03",
+      "riskTolerance": "MODERATELY_AGGRESSIVE",
+      "goals": [
+        "GENERAL_SAVINGS",
+        "WEALTH_TRANSFER",
+        "EMERGENCY_FUND"
+      ]
+    },
+    {
+      "clientId": "C-100237",
+      "adviceService": "NONE",
+      "advisorId": null,
+      "enrolledDate": null,
+      "riskTolerance": null,
+      "goals": []
+    },
+    {
+      "clientId": "C-100238",
+      "adviceService": "NONE",
+      "advisorId": null,
+      "enrolledDate": null,
+      "riskTolerance": "AGGRESSIVE",
+      "goals": []
+    },
+    {
+      "clientId": "C-100239",
+      "adviceService": "NONE",
+      "advisorId": null,
+      "enrolledDate": null,
+      "riskTolerance": "CONSERVATIVE",
+      "goals": []
+    },
+    {
+      "clientId": "C-100240",
+      "adviceService": "NONE",
+      "advisorId": null,
+      "enrolledDate": null,
+      "riskTolerance": null,
+      "goals": []
+    },
+    {
+      "clientId": "C-100241",
+      "adviceService": "NONE",
+      "advisorId": null,
+      "enrolledDate": null,
+      "riskTolerance": null,
+      "goals": []
+    },
+    {
+      "clientId": "C-100242",
+      "adviceService": "NONE",
+      "advisorId": null,
+      "enrolledDate": null,
+      "riskTolerance": "MODERATELY_AGGRESSIVE",
+      "goals": []
+    },
+    {
+      "clientId": "C-100243",
+      "adviceService": "NONE",
+      "advisorId": null,
+      "enrolledDate": null,
+      "riskTolerance": "MODERATE",
+      "goals": []
+    },
+    {
+      "clientId": "C-100244",
+      "adviceService": "PERSONAL_ADVISOR",
+      "advisorId": "ADV-104",
+      "enrolledDate": "2024-05-02",
+      "riskTolerance": "CONSERVATIVE",
+      "goals": [
+        "EMERGENCY_FUND",
+        "EDUCATION",
+        "HOME_PURCHASE"
+      ]
+    },
+    {
+      "clientId": "C-100245",
+      "adviceService": "DIGITAL_ADVISOR",
+      "advisorId": null,
+      "enrolledDate": "2015-03-24",
+      "riskTolerance": "MODERATE",
+      "goals": [
+        "GENERAL_SAVINGS",
+        "WEALTH_TRANSFER"
+      ]
+    },
+    {
+      "clientId": "C-100246",
+      "adviceService": "PERSONAL_ADVISOR_SELECT",
+      "advisorId": "ADV-135",
+      "enrolledDate": "2019-09-23",
+      "riskTolerance": "CONSERVATIVE",
+      "goals": [
+        "GENERAL_SAVINGS",
+        "EDUCATION"
+      ]
+    },
+    {
+      "clientId": "C-100247",
+      "adviceService": "NONE",
+      "advisorId": null,
+      "enrolledDate": null,
+      "riskTolerance": null,
+      "goals": []
+    },
+    {
+      "clientId": "C-100248",
+      "adviceService": "NONE",
+      "advisorId": null,
+      "enrolledDate": null,
+      "riskTolerance": null,
+      "goals": []
+    },
+    {
+      "clientId": "C-100249",
+      "adviceService": "NONE",
+      "advisorId": null,
+      "enrolledDate": null,
+      "riskTolerance": "CONSERVATIVE",
+      "goals": []
+    },
+    {
+      "clientId": "C-100250",
+      "adviceService": "NONE",
+      "advisorId": null,
+      "enrolledDate": null,
+      "riskTolerance": null,
+      "goals": []
+    }
+  ]
+}

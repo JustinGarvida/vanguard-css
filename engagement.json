@@ -1,0 +1,2259 @@
+{
+  "meta": {
+    "asOfDate": "2026-10-01",
+    "seed": 42,
+    "fictional": true
+  },
+  "records": [
+    {
+      "clientId": "C-100001",
+      "lastLoginDate": "2025-06-27",
+      "logins90d": 0,
+      "mobileAppUser": false,
+      "paperless": true,
+      "emailOptIn": false,
+      "lastContactCenterCallDate": "2026-02-09"
+    },
+    {
+      "clientId": "C-100002",
+      "lastLoginDate": "2026-09-24",
+      "logins90d": 50,
+      "mobileAppUser": true,
+      "paperless": true,
+      "emailOptIn": true,
+      "lastContactCenterCallDate": null
+    },
+    {
+      "clientId": "C-100003",
+      "lastLoginDate": "2026-09-15",
+      "logins90d": 3,
+      "mobileAppUser": true,
+      "paperless": true,
+      "emailOptIn": true,
+      "lastContactCenterCallDate": "2025-11-20"
+    },
+    {
+      "clientId": "C-100004",
+      "lastLoginDate": "2026-09-13",
+      "logins90d": 17,
+      "mobileAppUser": true,
+      "paperless": false,
+      "emailOptIn": true,
+      "lastContactCenterCallDate": "2026-08-29"
+    },
+    {
+      "clientId": "C-100005",
+      "lastLoginDate": "2026-10-01",
+      "logins90d": 8,
+      "mobileAppUser": false,
+      "paperless": false,
+      "emailOptIn": true,
+      "lastContactCenterCallDate": "2026-02-24"
+    },
+    {
+      "clientId": "C-100006",
+      "lastLoginDate": "2024-10-06",
+      "logins90d": 0,
+      "mobileAppUser": false,
+      "paperless": true,
+      "emailOptIn": true,
+      "lastContactCenterCallDate": null
+    },
+    {
+      "clientId": "C-100007",
+      "lastLoginDate": "2024-06-02",
+      "logins90d": 0,
+      "mobileAppUser": false,
+      "paperless": true,
+      "emailOptIn": true,
+      "lastContactCenterCallDate": null
+    },
+    {
+      "clientId": "C-100008",
+      "lastLoginDate": "2026-09-24",
+      "logins90d": 45,
+      "mobileAppUser": true,
+      "paperless": false,
+      "emailOptIn": false,
+      "lastContactCenterCallDate": "2025-01-03"
+    },
+    {
+      "clientId": "C-100009",
+      "lastLoginDate": "2026-03-06",
+      "logins90d": 0,
+      "mobileAppUser": false,
+      "paperless": false,
+      "emailOptIn": true,
+      "lastContactCenterCallDate": null
+    },
+    {
+      "clientId": "C-100010",
+      "lastLoginDate": "2026-09-21",
+      "logins90d": 32,
+      "mobileAppUser": true,
+      "paperless": false,
+      "emailOptIn": true,
+      "lastContactCenterCallDate": null
+    },
+    {
+      "clientId": "C-100011",
+      "lastLoginDate": "2026-02-28",
+      "logins90d": 0,
+      "mobileAppUser": false,
+      "paperless": true,
+      "emailOptIn": false,
+      "lastContactCenterCallDate": null
+    },
+    {
+      "clientId": "C-100012",
+      "lastLoginDate": "2026-04-28",
+      "logins90d": 0,
+      "mobileAppUser": false,
+      "paperless": true,
+      "emailOptIn": true,
+      "lastContactCenterCallDate": "2026-07-29"
+    },
+    {
+      "clientId": "C-100013",
+      "lastLoginDate": "2026-09-17",
+      "logins90d": 14,
+      "mobileAppUser": true,
+      "paperless": true,
+      "emailOptIn": true,
+      "lastContactCenterCallDate": "2025-09-07"
+    },
+    {
+      "clientId": "C-100014",
+      "lastLoginDate": "2026-09-13",
+      "logins90d": 53,
+      "mobileAppUser": true,
+      "paperless": true,
+      "emailOptIn": true,
+      "lastContactCenterCallDate": "2024-12-06"
+    },
+    {
+      "clientId": "C-100015",
+      "lastLoginDate": "2026-03-29",
+      "logins90d": 0,
+      "mobileAppUser": false,
+      "paperless": true,
+      "emailOptIn": true,
+      "lastContactCenterCallDate": "2024-11-20"
+    },
+    {
+      "clientId": "C-100016",
+      "lastLoginDate": "2024-09-17",
+      "logins90d": 0,
+      "mobileAppUser": false,
+      "paperless": false,
+      "emailOptIn": true,
+      "lastContactCenterCallDate": null
+    },
+    {
+      "clientId": "C-100017",
+      "lastLoginDate": "2026-09-09",
+      "logins90d": 41,
+      "mobileAppUser": true,
+      "paperless": true,
+      "emailOptIn": true,
+      "lastContactCenterCallDate": "2025-06-23"
+    },
+    {
+      "clientId": "C-100018",
+      "lastLoginDate": "2024-05-10",
+      "logins90d": 0,
+      "mobileAppUser": false,
+      "paperless": false,
+      "emailOptIn": true,
+      "lastContactCenterCallDate": "2026-04-04"
+    },
+    {
+      "clientId": "C-100019",
+      "lastLoginDate": "2024-08-28",
+      "logins90d": 0,
+      "mobileAppUser": false,
+      "paperless": false,
+      "emailOptIn": true,
+      "lastContactCenterCallDate": "2025-04-18"
+    },
+    {
+      "clientId": "C-100020",
+      "lastLoginDate": "2025-04-01",
+      "logins90d": 0,
+      "mobileAppUser": false,
+      "paperless": true,
+      "emailOptIn": true,
+      "lastContactCenterCallDate": null
+    },
+    {
+      "clientId": "C-100021",
+      "lastLoginDate": "2025-06-08",
+      "logins90d": 0,
+      "mobileAppUser": false,
+      "paperless": false,
+      "emailOptIn": true,
+      "lastContactCenterCallDate": null
+    },
+    {
+      "clientId": "C-100022",
+      "lastLoginDate": "2026-09-01",
+      "logins90d": 30,
+      "mobileAppUser": false,
+      "paperless": true,
+      "emailOptIn": true,
+      "lastContactCenterCallDate": null
+    },
+    {
+      "clientId": "C-100023",
+      "lastLoginDate": "2026-09-17",
+      "logins90d": 5,
+      "mobileAppUser": false,
+      "paperless": false,
+      "emailOptIn": true,
+      "lastContactCenterCallDate": "2025-08-01"
+    },
+    {
+      "clientId": "C-100024",
+      "lastLoginDate": "2025-10-07",
+      "logins90d": 0,
+      "mobileAppUser": false,
+      "paperless": true,
+      "emailOptIn": false,
+      "lastContactCenterCallDate": null
+    },
+    {
+      "clientId": "C-100025",
+      "lastLoginDate": "2024-09-10",
+      "logins90d": 0,
+      "mobileAppUser": false,
+      "paperless": true,
+      "emailOptIn": true,
+      "lastContactCenterCallDate": "2026-05-28"
+    },
+    {
+      "clientId": "C-100026",
+      "lastLoginDate": "2026-09-12",
+      "logins90d": 5,
+      "mobileAppUser": false,
+      "paperless": false,
+      "emailOptIn": true,
+      "lastContactCenterCallDate": "2024-12-11"
+    },
+    {
+      "clientId": "C-100027",
+      "lastLoginDate": "2025-05-20",
+      "logins90d": 0,
+      "mobileAppUser": false,
+      "paperless": true,
+      "emailOptIn": true,
+      "lastContactCenterCallDate": "2024-11-18"
+    },
+    {
+      "clientId": "C-100028",
+      "lastLoginDate": "2026-09-14",
+      "logins90d": 26,
+      "mobileAppUser": true,
+      "paperless": true,
+      "emailOptIn": true,
+      "lastContactCenterCallDate": "2025-03-05"
+    },
+    {
+      "clientId": "C-100029",
+      "lastLoginDate": "2026-09-10",
+      "logins90d": 40,
+      "mobileAppUser": false,
+      "paperless": false,
+      "emailOptIn": true,
+      "lastContactCenterCallDate": "2025-01-25"
+    },
+    {
+      "clientId": "C-100030",
+      "lastLoginDate": "2025-11-03",
+      "logins90d": 0,
+      "mobileAppUser": false,
+      "paperless": true,
+      "emailOptIn": true,
+      "lastContactCenterCallDate": "2026-04-27"
+    },
+    {
+      "clientId": "C-100031",
+      "lastLoginDate": "2026-09-27",
+      "logins90d": 6,
+      "mobileAppUser": true,
+      "paperless": false,
+      "emailOptIn": false,
+      "lastContactCenterCallDate": null
+    },
+    {
+      "clientId": "C-100032",
+      "lastLoginDate": "2026-09-01",
+      "logins90d": 44,
+      "mobileAppUser": true,
+      "paperless": true,
+      "emailOptIn": true,
+      "lastContactCenterCallDate": null
+    },
+    {
+      "clientId": "C-100033",
+      "lastLoginDate": "2026-02-18",
+      "logins90d": 0,
+      "mobileAppUser": false,
+      "paperless": true,
+      "emailOptIn": true,
+      "lastContactCenterCallDate": "2024-10-21"
+    },
+    {
+      "clientId": "C-100034",
+      "lastLoginDate": "2026-03-19",
+      "logins90d": 0,
+      "mobileAppUser": false,
+      "paperless": false,
+      "emailOptIn": true,
+      "lastContactCenterCallDate": "2026-07-07"
+    },
+    {
+      "clientId": "C-100035",
+      "lastLoginDate": "2026-09-05",
+      "logins90d": 11,
+      "mobileAppUser": false,
+      "paperless": true,
+      "emailOptIn": true,
+      "lastContactCenterCallDate": null
+    },
+    {
+      "clientId": "C-100036",
+      "lastLoginDate": "2026-09-08",
+      "logins90d": 51,
+      "mobileAppUser": true,
+      "paperless": true,
+      "emailOptIn": true,
+      "lastContactCenterCallDate": null
+    },
+    {
+      "clientId": "C-100037",
+      "lastLoginDate": "2026-09-09",
+      "logins90d": 31,
+      "mobileAppUser": true,
+      "paperless": true,
+      "emailOptIn": false,
+      "lastContactCenterCallDate": "2025-07-12"
+    },
+    {
+      "clientId": "C-100038",
+      "lastLoginDate": "2026-09-19",
+      "logins90d": 38,
+      "mobileAppUser": true,
+      "paperless": false,
+      "emailOptIn": false,
+      "lastContactCenterCallDate": "2025-01-12"
+    },
+    {
+      "clientId": "C-100039",
+      "lastLoginDate": "2026-09-06",
+      "logins90d": 38,
+      "mobileAppUser": true,
+      "paperless": false,
+      "emailOptIn": true,
+      "lastContactCenterCallDate": "2025-05-28"
+    },
+    {
+      "clientId": "C-100040",
+      "lastLoginDate": "2024-05-04",
+      "logins90d": 0,
+      "mobileAppUser": false,
+      "paperless": true,
+      "emailOptIn": true,
+      "lastContactCenterCallDate": null
+    },
+    {
+      "clientId": "C-100041",
+      "lastLoginDate": "2025-02-08",
+      "logins90d": 0,
+      "mobileAppUser": false,
+      "paperless": true,
+      "emailOptIn": false,
+      "lastContactCenterCallDate": null
+    },
+    {
+      "clientId": "C-100042",
+      "lastLoginDate": "2026-09-21",
+      "logins90d": 54,
+      "mobileAppUser": false,
+      "paperless": true,
+      "emailOptIn": true,
+      "lastContactCenterCallDate": null
+    },
+    {
+      "clientId": "C-100043",
+      "lastLoginDate": "2026-09-18",
+      "logins90d": 47,
+      "mobileAppUser": true,
+      "paperless": true,
+      "emailOptIn": true,
+      "lastContactCenterCallDate": "2026-07-29"
+    },
+    {
+      "clientId": "C-100044",
+      "lastLoginDate": "2026-09-08",
+      "logins90d": 33,
+      "mobileAppUser": true,
+      "paperless": false,
+      "emailOptIn": true,
+      "lastContactCenterCallDate": null
+    },
+    {
+      "clientId": "C-100045",
+      "lastLoginDate": "2026-05-26",
+      "logins90d": 0,
+      "mobileAppUser": false,
+      "paperless": false,
+      "emailOptIn": true,
+      "lastContactCenterCallDate": "2025-12-08"
+    },
+    {
+      "clientId": "C-100046",
+      "lastLoginDate": "2026-09-23",
+      "logins90d": 24,
+      "mobileAppUser": true,
+      "paperless": false,
+      "emailOptIn": true,
+      "lastContactCenterCallDate": null
+    },
+    {
+      "clientId": "C-100047",
+      "lastLoginDate": "2025-02-17",
+      "logins90d": 0,
+      "mobileAppUser": false,
+      "paperless": true,
+      "emailOptIn": true,
+      "lastContactCenterCallDate": null
+    },
+    {
+      "clientId": "C-100048",
+      "lastLoginDate": "2025-03-15",
+      "logins90d": 0,
+      "mobileAppUser": false,
+      "paperless": false,
+      "emailOptIn": true,
+      "lastContactCenterCallDate": null
+    },
+    {
+      "clientId": "C-100049",
+      "lastLoginDate": "2025-03-29",
+      "logins90d": 0,
+      "mobileAppUser": false,
+      "paperless": false,
+      "emailOptIn": true,
+      "lastContactCenterCallDate": null
+    },
+    {
+      "clientId": "C-100050",
+      "lastLoginDate": "2026-09-20",
+      "logins90d": 22,
+      "mobileAppUser": true,
+      "paperless": true,
+      "emailOptIn": true,
+      "lastContactCenterCallDate": "2025-06-07"
+    },
+    {
+      "clientId": "C-100051",
+      "lastLoginDate": "2024-08-17",
+      "logins90d": 0,
+      "mobileAppUser": false,
+      "paperless": true,
+      "emailOptIn": true,
+      "lastContactCenterCallDate": "2024-12-24"
+    },
+    {
+      "clientId": "C-100052",
+      "lastLoginDate": "2024-09-05",
+      "logins90d": 0,
+      "mobileAppUser": false,
+      "paperless": false,
+      "emailOptIn": true,
+      "lastContactCenterCallDate": "2025-03-14"
+    },
+    {
+      "clientId": "C-100053",
+      "lastLoginDate": "2026-09-05",
+      "logins90d": 57,
+      "mobileAppUser": true,
+      "paperless": false,
+      "emailOptIn": true,
+      "lastContactCenterCallDate": null
+    },
+    {
+      "clientId": "C-100054",
+      "lastLoginDate": "2026-09-22",
+      "logins90d": 31,
+      "mobileAppUser": true,
+      "paperless": true,
+      "emailOptIn": true,
+      "lastContactCenterCallDate": "2025-06-28"
+    },
+    {
+      "clientId": "C-100055",
+      "lastLoginDate": "2026-09-06",
+      "logins90d": 7,
+      "mobileAppUser": true,
+      "paperless": false,
+      "emailOptIn": false,
+      "lastContactCenterCallDate": "2025-01-07"
+    },
+    {
+      "clientId": "C-100056",
+      "lastLoginDate": "2026-09-14",
+      "logins90d": 14,
+      "mobileAppUser": false,
+      "paperless": true,
+      "emailOptIn": false,
+      "lastContactCenterCallDate": "2026-02-28"
+    },
+    {
+      "clientId": "C-100057",
+      "lastLoginDate": "2024-11-01",
+      "logins90d": 0,
+      "mobileAppUser": false,
+      "paperless": true,
+      "emailOptIn": true,
+      "lastContactCenterCallDate": null
+    },
+    {
+      "clientId": "C-100058",
+      "lastLoginDate": "2026-09-25",
+      "logins90d": 36,
+      "mobileAppUser": false,
+      "paperless": true,
+      "emailOptIn": true,
+      "lastContactCenterCallDate": null
+    },
+    {
+      "clientId": "C-100059",
+      "lastLoginDate": "2025-02-16",
+      "logins90d": 0,
+      "mobileAppUser": false,
+      "paperless": true,
+      "emailOptIn": true,
+      "lastContactCenterCallDate": null
+    },
+    {
+      "clientId": "C-100061",
+      "lastLoginDate": "2026-09-30",
+      "logins90d": 39,
+      "mobileAppUser": true,
+      "paperless": true,
+      "emailOptIn": true,
+      "lastContactCenterCallDate": "2025-12-05"
+    },
+    {
+      "clientId": "C-100062",
+      "lastLoginDate": "2026-09-16",
+      "logins90d": 23,
+      "mobileAppUser": false,
+      "paperless": false,
+      "emailOptIn": false,
+      "lastContactCenterCallDate": "2025-06-18"
+    },
+    {
+      "clientId": "C-100063",
+      "lastLoginDate": "2026-09-10",
+      "logins90d": 60,
+      "mobileAppUser": true,
+      "paperless": true,
+      "emailOptIn": true,
+      "lastContactCenterCallDate": null
+    },
+    {
+      "clientId": "C-100064",
+      "lastLoginDate": "2026-09-18",
+      "logins90d": 23,
+      "mobileAppUser": false,
+      "paperless": true,
+      "emailOptIn": true,
+      "lastContactCenterCallDate": "2025-01-23"
+    },
+    {
+      "clientId": "C-100065",
+      "lastLoginDate": "2024-05-08",
+      "logins90d": 0,
+      "mobileAppUser": false,
+      "paperless": true,
+      "emailOptIn": false,
+      "lastContactCenterCallDate": "2025-03-30"
+    },
+    {
+      "clientId": "C-100066",
+      "lastLoginDate": "2026-09-29",
+      "logins90d": 34,
+      "mobileAppUser": true,
+      "paperless": true,
+      "emailOptIn": true,
+      "lastContactCenterCallDate": null
+    },
+    {
+      "clientId": "C-100067",
+      "lastLoginDate": "2026-09-22",
+      "logins90d": 52,
+      "mobileAppUser": false,
+      "paperless": true,
+      "emailOptIn": true,
+      "lastContactCenterCallDate": "2026-03-09"
+    },
+    {
+      "clientId": "C-100068",
+      "lastLoginDate": "2026-09-08",
+      "logins90d": 8,
+      "mobileAppUser": false,
+      "paperless": true,
+      "emailOptIn": true,
+      "lastContactCenterCallDate": "2025-02-01"
+    },
+    {
+      "clientId": "C-100069",
+      "lastLoginDate": "2026-09-15",
+      "logins90d": 6,
+      "mobileAppUser": true,
+      "paperless": true,
+      "emailOptIn": false,
+      "lastContactCenterCallDate": "2025-08-12"
+    },
+    {
+      "clientId": "C-100070",
+      "lastLoginDate": "2026-09-02",
+      "logins90d": 39,
+      "mobileAppUser": true,
+      "paperless": false,
+      "emailOptIn": true,
+      "lastContactCenterCallDate": "2025-07-21"
+    },
+    {
+      "clientId": "C-100071",
+      "lastLoginDate": "2026-09-24",
+      "logins90d": 45,
+      "mobileAppUser": true,
+      "paperless": true,
+      "emailOptIn": false,
+      "lastContactCenterCallDate": null
+    },
+    {
+      "clientId": "C-100072",
+      "lastLoginDate": "2026-09-06",
+      "logins90d": 11,
+      "mobileAppUser": true,
+      "paperless": true,
+      "emailOptIn": false,
+      "lastContactCenterCallDate": null
+    },
+    {
+      "clientId": "C-100073",
+      "lastLoginDate": "2025-09-04",
+      "logins90d": 0,
+      "mobileAppUser": false,
+      "paperless": true,
+      "emailOptIn": false,
+      "lastContactCenterCallDate": null
+    },
+    {
+      "clientId": "C-100074",
+      "lastLoginDate": "2026-09-04",
+      "logins90d": 39,
+      "mobileAppUser": true,
+      "paperless": false,
+      "emailOptIn": true,
+      "lastContactCenterCallDate": "2026-08-27"
+    },
+    {
+      "clientId": "C-100075",
+      "lastLoginDate": "2026-09-23",
+      "logins90d": 45,
+      "mobileAppUser": true,
+      "paperless": true,
+      "emailOptIn": true,
+      "lastContactCenterCallDate": null
+    },
+    {
+      "clientId": "C-100076",
+      "lastLoginDate": "2026-09-17",
+      "logins90d": 19,
+      "mobileAppUser": true,
+      "paperless": true,
+      "emailOptIn": true,
+      "lastContactCenterCallDate": null
+    },
+    {
+      "clientId": "C-100077",
+      "lastLoginDate": "2026-04-04",
+      "logins90d": 0,
+      "mobileAppUser": false,
+      "paperless": true,
+      "emailOptIn": true,
+      "lastContactCenterCallDate": "2025-12-22"
+    },
+    {
+      "clientId": "C-100078",
+      "lastLoginDate": "2024-06-04",
+      "logins90d": 0,
+      "mobileAppUser": false,
+      "paperless": true,
+      "emailOptIn": true,
+      "lastContactCenterCallDate": "2026-08-04"
+    },
+    {
+      "clientId": "C-100079",
+      "lastLoginDate": "2025-11-25",
+      "logins90d": 0,
+      "mobileAppUser": false,
+      "paperless": false,
+      "emailOptIn": true,
+      "lastContactCenterCallDate": null
+    },
+    {
+      "clientId": "C-100080",
+      "lastLoginDate": "2026-09-23",
+      "logins90d": 19,
+      "mobileAppUser": false,
+      "paperless": false,
+      "emailOptIn": true,
+      "lastContactCenterCallDate": "2025-04-19"
+    },
+    {
+      "clientId": "C-100081",
+      "lastLoginDate": "2026-09-04",
+      "logins90d": 22,
+      "mobileAppUser": false,
+      "paperless": false,
+      "emailOptIn": true,
+      "lastContactCenterCallDate": null
+    },
+    {
+      "clientId": "C-100082",
+      "lastLoginDate": "2026-09-03",
+      "logins90d": 25,
+      "mobileAppUser": true,
+      "paperless": true,
+      "emailOptIn": true,
+      "lastContactCenterCallDate": "2026-07-26"
+    },
+    {
+      "clientId": "C-100083",
+      "lastLoginDate": "2026-09-28",
+      "logins90d": 38,
+      "mobileAppUser": true,
+      "paperless": false,
+      "emailOptIn": true,
+      "lastContactCenterCallDate": null
+    },
+    {
+      "clientId": "C-100084",
+      "lastLoginDate": "2026-01-31",
+      "logins90d": 0,
+      "mobileAppUser": false,
+      "paperless": false,
+      "emailOptIn": false,
+      "lastContactCenterCallDate": "2026-06-19"
+    },
+    {
+      "clientId": "C-100085",
+      "lastLoginDate": "2026-09-02",
+      "logins90d": 40,
+      "mobileAppUser": true,
+      "paperless": true,
+      "emailOptIn": true,
+      "lastContactCenterCallDate": null
+    },
+    {
+      "clientId": "C-100086",
+      "lastLoginDate": "2026-09-20",
+      "logins90d": 45,
+      "mobileAppUser": false,
+      "paperless": true,
+      "emailOptIn": false,
+      "lastContactCenterCallDate": null
+    },
+    {
+      "clientId": "C-100087",
+      "lastLoginDate": "2025-11-16",
+      "logins90d": 0,
+      "mobileAppUser": false,
+      "paperless": false,
+      "emailOptIn": true,
+      "lastContactCenterCallDate": null
+    },
+    {
+      "clientId": "C-100088",
+      "lastLoginDate": "2026-09-06",
+      "logins90d": 15,
+      "mobileAppUser": true,
+      "paperless": true,
+      "emailOptIn": true,
+      "lastContactCenterCallDate": null
+    },
+    {
+      "clientId": "C-100089",
+      "lastLoginDate": "2025-09-25",
+      "logins90d": 0,
+      "mobileAppUser": false,
+      "paperless": true,
+      "emailOptIn": true,
+      "lastContactCenterCallDate": "2026-05-17"
+    },
+    {
+      "clientId": "C-100090",
+      "lastLoginDate": "2026-09-23",
+      "logins90d": 51,
+      "mobileAppUser": false,
+      "paperless": false,
+      "emailOptIn": true,
+      "lastContactCenterCallDate": "2026-07-29"
+    },
+    {
+      "clientId": "C-100091",
+      "lastLoginDate": "2026-09-04",
+      "logins90d": 52,
+      "mobileAppUser": false,
+      "paperless": true,
+      "emailOptIn": true,
+      "lastContactCenterCallDate": null
+    },
+    {
+      "clientId": "C-100092",
+      "lastLoginDate": "2026-09-26",
+      "logins90d": 36,
+      "mobileAppUser": true,
+      "paperless": true,
+      "emailOptIn": true,
+      "lastContactCenterCallDate": null
+    },
+    {
+      "clientId": "C-100093",
+      "lastLoginDate": "2026-09-14",
+      "logins90d": 3,
+      "mobileAppUser": false,
+      "paperless": true,
+      "emailOptIn": true,
+      "lastContactCenterCallDate": "2024-10-29"
+    },
+    {
+      "clientId": "C-100094",
+      "lastLoginDate": "2026-09-19",
+      "logins90d": 55,
+      "mobileAppUser": true,
+      "paperless": true,
+      "emailOptIn": true,
+      "lastContactCenterCallDate": "2025-08-26"
+    },
+    {
+      "clientId": "C-100095",
+      "lastLoginDate": "2026-09-30",
+      "logins90d": 57,
+      "mobileAppUser": false,
+      "paperless": false,
+      "emailOptIn": true,
+      "lastContactCenterCallDate": null
+    },
+    {
+      "clientId": "C-100096",
+      "lastLoginDate": "2026-09-14",
+      "logins90d": 15,
+      "mobileAppUser": true,
+      "paperless": false,
+      "emailOptIn": true,
+      "lastContactCenterCallDate": "2026-09-11"
+    },
+    {
+      "clientId": "C-100097",
+      "lastLoginDate": "2026-09-24",
+      "logins90d": 7,
+      "mobileAppUser": true,
+      "paperless": true,
+      "emailOptIn": true,
+      "lastContactCenterCallDate": null
+    },
+    {
+      "clientId": "C-100098",
+      "lastLoginDate": "2026-09-26",
+      "logins90d": 13,
+      "mobileAppUser": true,
+      "paperless": false,
+      "emailOptIn": true,
+      "lastContactCenterCallDate": "2025-10-27"
+    },
+    {
+      "clientId": "C-100099",
+      "lastLoginDate": "2026-09-18",
+      "logins90d": 41,
+      "mobileAppUser": true,
+      "paperless": true,
+      "emailOptIn": false,
+      "lastContactCenterCallDate": null
+    },
+    {
+      "clientId": "C-100100",
+      "lastLoginDate": "2026-09-20",
+      "logins90d": 58,
+      "mobileAppUser": true,
+      "paperless": true,
+      "emailOptIn": true,
+      "lastContactCenterCallDate": null
+    },
+    {
+      "clientId": "C-100101",
+      "lastLoginDate": "2024-10-12",
+      "logins90d": 0,
+      "mobileAppUser": false,
+      "paperless": false,
+      "emailOptIn": false,
+      "lastContactCenterCallDate": "2024-12-18"
+    },
+    {
+      "clientId": "C-100102",
+      "lastLoginDate": "2026-09-20",
+      "logins90d": 18,
+      "mobileAppUser": true,
+      "paperless": false,
+      "emailOptIn": true,
+      "lastContactCenterCallDate": "2025-08-17"
+    },
+    {
+      "clientId": "C-100103",
+      "lastLoginDate": "2026-09-19",
+      "logins90d": 43,
+      "mobileAppUser": false,
+      "paperless": true,
+      "emailOptIn": false,
+      "lastContactCenterCallDate": null
+    },
+    {
+      "clientId": "C-100104",
+      "lastLoginDate": "2025-06-17",
+      "logins90d": 0,
+      "mobileAppUser": false,
+      "paperless": true,
+      "emailOptIn": true,
+      "lastContactCenterCallDate": null
+    },
+    {
+      "clientId": "C-100105",
+      "lastLoginDate": "2026-09-19",
+      "logins90d": 20,
+      "mobileAppUser": false,
+      "paperless": true,
+      "emailOptIn": false,
+      "lastContactCenterCallDate": null
+    },
+    {
+      "clientId": "C-100106",
+      "lastLoginDate": "2026-09-23",
+      "logins90d": 33,
+      "mobileAppUser": false,
+      "paperless": true,
+      "emailOptIn": false,
+      "lastContactCenterCallDate": "2025-09-27"
+    },
+    {
+      "clientId": "C-100107",
+      "lastLoginDate": "2025-06-26",
+      "logins90d": 0,
+      "mobileAppUser": false,
+      "paperless": false,
+      "emailOptIn": true,
+      "lastContactCenterCallDate": "2026-04-12"
+    },
+    {
+      "clientId": "C-100108",
+      "lastLoginDate": "2026-09-11",
+      "logins90d": 50,
+      "mobileAppUser": true,
+      "paperless": true,
+      "emailOptIn": true,
+      "lastContactCenterCallDate": null
+    },
+    {
+      "clientId": "C-100109",
+      "lastLoginDate": "2026-09-06",
+      "logins90d": 42,
+      "mobileAppUser": false,
+      "paperless": false,
+      "emailOptIn": true,
+      "lastContactCenterCallDate": null
+    },
+    {
+      "clientId": "C-100110",
+      "lastLoginDate": "2026-09-19",
+      "logins90d": 7,
+      "mobileAppUser": true,
+      "paperless": true,
+      "emailOptIn": false,
+      "lastContactCenterCallDate": "2025-09-05"
+    },
+    {
+      "clientId": "C-100111",
+      "lastLoginDate": "2026-09-11",
+      "logins90d": 30,
+      "mobileAppUser": true,
+      "paperless": true,
+      "emailOptIn": true,
+      "lastContactCenterCallDate": "2026-01-25"
+    },
+    {
+      "clientId": "C-100112",
+      "lastLoginDate": "2024-10-27",
+      "logins90d": 0,
+      "mobileAppUser": false,
+      "paperless": false,
+      "emailOptIn": true,
+      "lastContactCenterCallDate": "2026-04-25"
+    },
+    {
+      "clientId": "C-100113",
+      "lastLoginDate": "2026-09-19",
+      "logins90d": 45,
+      "mobileAppUser": true,
+      "paperless": true,
+      "emailOptIn": true,
+      "lastContactCenterCallDate": "2026-02-16"
+    },
+    {
+      "clientId": "C-100114",
+      "lastLoginDate": "2026-09-19",
+      "logins90d": 52,
+      "mobileAppUser": false,
+      "paperless": false,
+      "emailOptIn": true,
+      "lastContactCenterCallDate": "2025-08-20"
+    },
+    {
+      "clientId": "C-100115",
+      "lastLoginDate": "2026-10-01",
+      "logins90d": 43,
+      "mobileAppUser": false,
+      "paperless": true,
+      "emailOptIn": true,
+      "lastContactCenterCallDate": "2025-03-27"
+    },
+    {
+      "clientId": "C-100116",
+      "lastLoginDate": "2026-09-20",
+      "logins90d": 15,
+      "mobileAppUser": true,
+      "paperless": true,
+      "emailOptIn": true,
+      "lastContactCenterCallDate": "2025-10-07"
+    },
+    {
+      "clientId": "C-100117",
+      "lastLoginDate": "2026-09-17",
+      "logins90d": 44,
+      "mobileAppUser": false,
+      "paperless": true,
+      "emailOptIn": true,
+      "lastContactCenterCallDate": null
+    },
+    {
+      "clientId": "C-100118",
+      "lastLoginDate": "2026-09-01",
+      "logins90d": 46,
+      "mobileAppUser": true,
+      "paperless": true,
+      "emailOptIn": true,
+      "lastContactCenterCallDate": "2026-04-27"
+    },
+    {
+      "clientId": "C-100119",
+      "lastLoginDate": "2026-09-18",
+      "logins90d": 22,
+      "mobileAppUser": true,
+      "paperless": false,
+      "emailOptIn": false,
+      "lastContactCenterCallDate": null
+    },
+    {
+      "clientId": "C-100120",
+      "lastLoginDate": "2026-09-24",
+      "logins90d": 30,
+      "mobileAppUser": true,
+      "paperless": true,
+      "emailOptIn": false,
+      "lastContactCenterCallDate": "2025-11-14"
+    },
+    {
+      "clientId": "C-100121",
+      "lastLoginDate": "2026-09-18",
+      "logins90d": 23,
+      "mobileAppUser": false,
+      "paperless": true,
+      "emailOptIn": true,
+      "lastContactCenterCallDate": null
+    },
+    {
+      "clientId": "C-100122",
+      "lastLoginDate": "2025-11-01",
+      "logins90d": 0,
+      "mobileAppUser": false,
+      "paperless": true,
+      "emailOptIn": true,
+      "lastContactCenterCallDate": "2025-07-05"
+    },
+    {
+      "clientId": "C-100123",
+      "lastLoginDate": "2026-09-25",
+      "logins90d": 42,
+      "mobileAppUser": true,
+      "paperless": true,
+      "emailOptIn": false,
+      "lastContactCenterCallDate": null
+    },
+    {
+      "clientId": "C-100124",
+      "lastLoginDate": "2026-09-26",
+      "logins90d": 15,
+      "mobileAppUser": true,
+      "paperless": true,
+      "emailOptIn": true,
+      "lastContactCenterCallDate": null
+    },
+    {
+      "clientId": "C-100125",
+      "lastLoginDate": "2026-01-14",
+      "logins90d": 0,
+      "mobileAppUser": false,
+      "paperless": true,
+      "emailOptIn": true,
+      "lastContactCenterCallDate": null
+    },
+    {
+      "clientId": "C-100126",
+      "lastLoginDate": "2026-10-01",
+      "logins90d": 22,
+      "mobileAppUser": false,
+      "paperless": false,
+      "emailOptIn": true,
+      "lastContactCenterCallDate": "2025-06-09"
+    },
+    {
+      "clientId": "C-100127",
+      "lastLoginDate": "2026-09-19",
+      "logins90d": 14,
+      "mobileAppUser": true,
+      "paperless": false,
+      "emailOptIn": true,
+      "lastContactCenterCallDate": null
+    },
+    {
+      "clientId": "C-100128",
+      "lastLoginDate": "2026-09-16",
+      "logins90d": 10,
+      "mobileAppUser": true,
+      "paperless": true,
+      "emailOptIn": true,
+      "lastContactCenterCallDate": null
+    },
+    {
+      "clientId": "C-100129",
+      "lastLoginDate": "2026-09-12",
+      "logins90d": 9,
+      "mobileAppUser": false,
+      "paperless": true,
+      "emailOptIn": false,
+      "lastContactCenterCallDate": "2024-12-09"
+    },
+    {
+      "clientId": "C-100130",
+      "lastLoginDate": "2026-03-12",
+      "logins90d": 0,
+      "mobileAppUser": false,
+      "paperless": false,
+      "emailOptIn": false,
+      "lastContactCenterCallDate": "2024-10-11"
+    },
+    {
+      "clientId": "C-100131",
+      "lastLoginDate": "2026-03-09",
+      "logins90d": 0,
+      "mobileAppUser": false,
+      "paperless": true,
+      "emailOptIn": false,
+      "lastContactCenterCallDate": "2025-04-09"
+    },
+    {
+      "clientId": "C-100132",
+      "lastLoginDate": "2026-09-08",
+      "logins90d": 42,
+      "mobileAppUser": true,
+      "paperless": true,
+      "emailOptIn": true,
+      "lastContactCenterCallDate": "2025-12-20"
+    },
+    {
+      "clientId": "C-100133",
+      "lastLoginDate": "2025-01-03",
+      "logins90d": 0,
+      "mobileAppUser": false,
+      "paperless": true,
+      "emailOptIn": true,
+      "lastContactCenterCallDate": "2026-01-05"
+    },
+    {
+      "clientId": "C-100134",
+      "lastLoginDate": "2026-09-28",
+      "logins90d": 36,
+      "mobileAppUser": true,
+      "paperless": true,
+      "emailOptIn": true,
+      "lastContactCenterCallDate": "2026-03-17"
+    },
+    {
+      "clientId": "C-100135",
+      "lastLoginDate": "2026-09-12",
+      "logins90d": 44,
+      "mobileAppUser": true,
+      "paperless": true,
+      "emailOptIn": true,
+      "lastContactCenterCallDate": "2026-07-20"
+    },
+    {
+      "clientId": "C-100136",
+      "lastLoginDate": "2025-07-26",
+      "logins90d": 0,
+      "mobileAppUser": false,
+      "paperless": false,
+      "emailOptIn": true,
+      "lastContactCenterCallDate": null
+    },
+    {
+      "clientId": "C-100137",
+      "lastLoginDate": "2026-09-19",
+      "logins90d": 7,
+      "mobileAppUser": false,
+      "paperless": true,
+      "emailOptIn": true,
+      "lastContactCenterCallDate": null
+    },
+    {
+      "clientId": "C-100138",
+      "lastLoginDate": "2026-09-06",
+      "logins90d": 15,
+      "mobileAppUser": true,
+      "paperless": false,
+      "emailOptIn": false,
+      "lastContactCenterCallDate": null
+    },
+    {
+      "clientId": "C-100139",
+      "lastLoginDate": "2026-09-12",
+      "logins90d": 8,
+      "mobileAppUser": true,
+      "paperless": false,
+      "emailOptIn": true,
+      "lastContactCenterCallDate": "2026-02-01"
+    },
+    {
+      "clientId": "C-100140",
+      "lastLoginDate": "2026-09-28",
+      "logins90d": 18,
+      "mobileAppUser": false,
+      "paperless": false,
+      "emailOptIn": true,
+      "lastContactCenterCallDate": "2025-06-05"
+    },
+    {
+      "clientId": "C-100141",
+      "lastLoginDate": "2024-11-04",
+      "logins90d": 0,
+      "mobileAppUser": false,
+      "paperless": false,
+      "emailOptIn": false,
+      "lastContactCenterCallDate": null
+    },
+    {
+      "clientId": "C-100142",
+      "lastLoginDate": "2026-09-30",
+      "logins90d": 21,
+      "mobileAppUser": false,
+      "paperless": true,
+      "emailOptIn": false,
+      "lastContactCenterCallDate": null
+    },
+    {
+      "clientId": "C-100143",
+      "lastLoginDate": "2026-09-18",
+      "logins90d": 20,
+      "mobileAppUser": true,
+      "paperless": true,
+      "emailOptIn": true,
+      "lastContactCenterCallDate": null
+    },
+    {
+      "clientId": "C-100144",
+      "lastLoginDate": "2026-09-25",
+      "logins90d": 7,
+      "mobileAppUser": true,
+      "paperless": false,
+      "emailOptIn": false,
+      "lastContactCenterCallDate": null
+    },
+    {
+      "clientId": "C-100145",
+      "lastLoginDate": "2026-09-20",
+      "logins90d": 31,
+      "mobileAppUser": false,
+      "paperless": true,
+      "emailOptIn": true,
+      "lastContactCenterCallDate": null
+    },
+    {
+      "clientId": "C-100146",
+      "lastLoginDate": "2026-10-01",
+      "logins90d": 28,
+      "mobileAppUser": false,
+      "paperless": true,
+      "emailOptIn": true,
+      "lastContactCenterCallDate": "2025-01-16"
+    },
+    {
+      "clientId": "C-100147",
+      "lastLoginDate": "2026-09-03",
+      "logins90d": 30,
+      "mobileAppUser": true,
+      "paperless": true,
+      "emailOptIn": false,
+      "lastContactCenterCallDate": null
+    },
+    {
+      "clientId": "C-100148",
+      "lastLoginDate": "2026-09-16",
+      "logins90d": 7,
+      "mobileAppUser": true,
+      "paperless": true,
+      "emailOptIn": true,
+      "lastContactCenterCallDate": "2026-01-09"
+    },
+    {
+      "clientId": "C-100149",
+      "lastLoginDate": "2026-09-03",
+      "logins90d": 38,
+      "mobileAppUser": false,
+      "paperless": false,
+      "emailOptIn": true,
+      "lastContactCenterCallDate": null
+    },
+    {
+      "clientId": "C-100150",
+      "lastLoginDate": "2026-09-15",
+      "logins90d": 40,
+      "mobileAppUser": true,
+      "paperless": true,
+      "emailOptIn": true,
+      "lastContactCenterCallDate": "2024-11-16"
+    },
+    {
+      "clientId": "C-100151",
+      "lastLoginDate": "2026-09-15",
+      "logins90d": 17,
+      "mobileAppUser": true,
+      "paperless": false,
+      "emailOptIn": true,
+      "lastContactCenterCallDate": "2025-04-16"
+    },
+    {
+      "clientId": "C-100152",
+      "lastLoginDate": "2026-09-12",
+      "logins90d": 57,
+      "mobileAppUser": false,
+      "paperless": true,
+      "emailOptIn": false,
+      "lastContactCenterCallDate": null
+    },
+    {
+      "clientId": "C-100153",
+      "lastLoginDate": "2026-09-16",
+      "logins90d": 53,
+      "mobileAppUser": true,
+      "paperless": true,
+      "emailOptIn": true,
+      "lastContactCenterCallDate": null
+    },
+    {
+      "clientId": "C-100154",
+      "lastLoginDate": "2024-05-09",
+      "logins90d": 0,
+      "mobileAppUser": false,
+      "paperless": false,
+      "emailOptIn": true,
+      "lastContactCenterCallDate": "2026-08-15"
+    },
+    {
+      "clientId": "C-100155",
+      "lastLoginDate": "2026-09-21",
+      "logins90d": 34,
+      "mobileAppUser": true,
+      "paperless": false,
+      "emailOptIn": true,
+      "lastContactCenterCallDate": null
+    },
+    {
+      "clientId": "C-100156",
+      "lastLoginDate": "2024-06-02",
+      "logins90d": 0,
+      "mobileAppUser": false,
+      "paperless": false,
+      "emailOptIn": true,
+      "lastContactCenterCallDate": null
+    },
+    {
+      "clientId": "C-100157",
+      "lastLoginDate": "2024-09-11",
+      "logins90d": 0,
+      "mobileAppUser": false,
+      "paperless": false,
+      "emailOptIn": false,
+      "lastContactCenterCallDate": "2026-09-10"
+    },
+    {
+      "clientId": "C-100158",
+      "lastLoginDate": "2024-08-23",
+      "logins90d": 0,
+      "mobileAppUser": false,
+      "paperless": false,
+      "emailOptIn": true,
+      "lastContactCenterCallDate": null
+    },
+    {
+      "clientId": "C-100159",
+      "lastLoginDate": "2026-06-29",
+      "logins90d": 0,
+      "mobileAppUser": false,
+      "paperless": true,
+      "emailOptIn": true,
+      "lastContactCenterCallDate": "2026-07-08"
+    },
+    {
+      "clientId": "C-100160",
+      "lastLoginDate": "2026-09-02",
+      "logins90d": 32,
+      "mobileAppUser": false,
+      "paperless": true,
+      "emailOptIn": true,
+      "lastContactCenterCallDate": "2026-01-01"
+    },
+    {
+      "clientId": "C-100161",
+      "lastLoginDate": "2024-10-28",
+      "logins90d": 0,
+      "mobileAppUser": false,
+      "paperless": false,
+      "emailOptIn": false,
+      "lastContactCenterCallDate": "2025-05-02"
+    },
+    {
+      "clientId": "C-100162",
+      "lastLoginDate": "2026-09-17",
+      "logins90d": 30,
+      "mobileAppUser": true,
+      "paperless": false,
+      "emailOptIn": true,
+      "lastContactCenterCallDate": "2025-03-05"
+    },
+    {
+      "clientId": "C-100163",
+      "lastLoginDate": "2026-03-16",
+      "logins90d": 0,
+      "mobileAppUser": false,
+      "paperless": false,
+      "emailOptIn": true,
+      "lastContactCenterCallDate": "2024-11-24"
+    },
+    {
+      "clientId": "C-100164",
+      "lastLoginDate": "2026-09-07",
+      "logins90d": 28,
+      "mobileAppUser": true,
+      "paperless": false,
+      "emailOptIn": true,
+      "lastContactCenterCallDate": "2025-05-16"
+    },
+    {
+      "clientId": "C-100165",
+      "lastLoginDate": "2026-09-11",
+      "logins90d": 36,
+      "mobileAppUser": true,
+      "paperless": true,
+      "emailOptIn": true,
+      "lastContactCenterCallDate": null
+    },
+    {
+      "clientId": "C-100166",
+      "lastLoginDate": "2026-09-02",
+      "logins90d": 58,
+      "mobileAppUser": false,
+      "paperless": true,
+      "emailOptIn": true,
+      "lastContactCenterCallDate": null
+    },
+    {
+      "clientId": "C-100167",
+      "lastLoginDate": "2026-06-05",
+      "logins90d": 0,
+      "mobileAppUser": false,
+      "paperless": true,
+      "emailOptIn": true,
+      "lastContactCenterCallDate": null
+    },
+    {
+      "clientId": "C-100168",
+      "lastLoginDate": "2026-09-16",
+      "logins90d": 10,
+      "mobileAppUser": false,
+      "paperless": false,
+      "emailOptIn": true,
+      "lastContactCenterCallDate": null
+    },
+    {
+      "clientId": "C-100169",
+      "lastLoginDate": "2026-09-12",
+      "logins90d": 34,
+      "mobileAppUser": true,
+      "paperless": true,
+      "emailOptIn": false,
+      "lastContactCenterCallDate": "2026-02-28"
+    },
+    {
+      "clientId": "C-100170",
+      "lastLoginDate": "2025-06-27",
+      "logins90d": 0,
+      "mobileAppUser": false,
+      "paperless": true,
+      "emailOptIn": true,
+      "lastContactCenterCallDate": "2025-04-30"
+    },
+    {
+      "clientId": "C-100171",
+      "lastLoginDate": "2026-01-15",
+      "logins90d": 0,
+      "mobileAppUser": false,
+      "paperless": true,
+      "emailOptIn": true,
+      "lastContactCenterCallDate": "2024-12-13"
+    },
+    {
+      "clientId": "C-100172",
+      "lastLoginDate": "2026-09-14",
+      "logins90d": 21,
+      "mobileAppUser": true,
+      "paperless": true,
+      "emailOptIn": true,
+      "lastContactCenterCallDate": "2024-12-19"
+    },
+    {
+      "clientId": "C-100173",
+      "lastLoginDate": "2024-08-13",
+      "logins90d": 0,
+      "mobileAppUser": false,
+      "paperless": true,
+      "emailOptIn": true,
+      "lastContactCenterCallDate": null
+    },
+    {
+      "clientId": "C-100174",
+      "lastLoginDate": "2026-09-09",
+      "logins90d": 35,
+      "mobileAppUser": false,
+      "paperless": true,
+      "emailOptIn": true,
+      "lastContactCenterCallDate": "2026-04-23"
+    },
+    {
+      "clientId": "C-100175",
+      "lastLoginDate": "2025-06-01",
+      "logins90d": 0,
+      "mobileAppUser": false,
+      "paperless": true,
+      "emailOptIn": true,
+      "lastContactCenterCallDate": null
+    },
+    {
+      "clientId": "C-100176",
+      "lastLoginDate": "2026-09-18",
+      "logins90d": 4,
+      "mobileAppUser": false,
+      "paperless": true,
+      "emailOptIn": true,
+      "lastContactCenterCallDate": "2026-06-21"
+    },
+    {
+      "clientId": "C-100177",
+      "lastLoginDate": "2026-09-27",
+      "logins90d": 22,
+      "mobileAppUser": true,
+      "paperless": true,
+      "emailOptIn": false,
+      "lastContactCenterCallDate": null
+    },
+    {
+      "clientId": "C-100178",
+      "lastLoginDate": "2026-09-22",
+      "logins90d": 8,
+      "mobileAppUser": true,
+      "paperless": true,
+      "emailOptIn": true,
+      "lastContactCenterCallDate": null
+    },
+    {
+      "clientId": "C-100179",
+      "lastLoginDate": "2026-09-05",
+      "logins90d": 27,
+      "mobileAppUser": false,
+      "paperless": true,
+      "emailOptIn": true,
+      "lastContactCenterCallDate": null
+    },
+    {
+      "clientId": "C-100180",
+      "lastLoginDate": "2025-08-06",
+      "logins90d": 0,
+      "mobileAppUser": false,
+      "paperless": true,
+      "emailOptIn": false,
+      "lastContactCenterCallDate": "2024-11-03"
+    },
+    {
+      "clientId": "C-100181",
+      "lastLoginDate": "2026-09-13",
+      "logins90d": 10,
+      "mobileAppUser": true,
+      "paperless": true,
+      "emailOptIn": true,
+      "lastContactCenterCallDate": "2024-10-20"
+    },
+    {
+      "clientId": "C-100182",
+      "lastLoginDate": "2025-12-16",
+      "logins90d": 0,
+      "mobileAppUser": false,
+      "paperless": false,
+      "emailOptIn": true,
+      "lastContactCenterCallDate": null
+    },
+    {
+      "clientId": "C-100183",
+      "lastLoginDate": "2026-09-30",
+      "logins90d": 34,
+      "mobileAppUser": true,
+      "paperless": true,
+      "emailOptIn": true,
+      "lastContactCenterCallDate": "2024-12-31"
+    },
+    {
+      "clientId": "C-100184",
+      "lastLoginDate": "2026-09-24",
+      "logins90d": 26,
+      "mobileAppUser": false,
+      "paperless": false,
+      "emailOptIn": false,
+      "lastContactCenterCallDate": null
+    },
+    {
+      "clientId": "C-100185",
+      "lastLoginDate": "2025-11-30",
+      "logins90d": 0,
+      "mobileAppUser": false,
+      "paperless": false,
+      "emailOptIn": false,
+      "lastContactCenterCallDate": null
+    },
+    {
+      "clientId": "C-100186",
+      "lastLoginDate": "2026-09-23",
+      "logins90d": 44,
+      "mobileAppUser": true,
+      "paperless": false,
+      "emailOptIn": true,
+      "lastContactCenterCallDate": null
+    },
+    {
+      "clientId": "C-100187",
+      "lastLoginDate": "2026-09-11",
+      "logins90d": 35,
+      "mobileAppUser": false,
+      "paperless": false,
+      "emailOptIn": false,
+      "lastContactCenterCallDate": "2026-02-28"
+    },
+    {
+      "clientId": "C-100188",
+      "lastLoginDate": "2025-07-29",
+      "logins90d": 0,
+      "mobileAppUser": false,
+      "paperless": true,
+      "emailOptIn": false,
+      "lastContactCenterCallDate": null
+    },
+    {
+      "clientId": "C-100189",
+      "lastLoginDate": "2026-09-04",
+      "logins90d": 16,
+      "mobileAppUser": true,
+      "paperless": false,
+      "emailOptIn": true,
+      "lastContactCenterCallDate": "2025-02-19"
+    },
+    {
+      "clientId": "C-100190",
+      "lastLoginDate": "2026-09-03",
+      "logins90d": 58,
+      "mobileAppUser": true,
+      "paperless": false,
+      "emailOptIn": true,
+      "lastContactCenterCallDate": null
+    },
+    {
+      "clientId": "C-100191",
+      "lastLoginDate": "2025-04-10",
+      "logins90d": 0,
+      "mobileAppUser": false,
+      "paperless": true,
+      "emailOptIn": false,
+      "lastContactCenterCallDate": null
+    },
+    {
+      "clientId": "C-100192",
+      "lastLoginDate": "2026-09-26",
+      "logins90d": 3,
+      "mobileAppUser": false,
+      "paperless": true,
+      "emailOptIn": true,
+      "lastContactCenterCallDate": "2026-07-25"
+    },
+    {
+      "clientId": "C-100193",
+      "lastLoginDate": "2026-09-09",
+      "logins90d": 3,
+      "mobileAppUser": true,
+      "paperless": true,
+      "emailOptIn": false,
+      "lastContactCenterCallDate": "2025-07-19"
+    },
+    {
+      "clientId": "C-100194",
+      "lastLoginDate": "2026-09-17",
+      "logins90d": 43,
+      "mobileAppUser": true,
+      "paperless": false,
+      "emailOptIn": true,
+      "lastContactCenterCallDate": "2024-12-20"
+    },
+    {
+      "clientId": "C-100195",
+      "lastLoginDate": "2026-09-04",
+      "logins90d": 8,
+      "mobileAppUser": false,
+      "paperless": false,
+      "emailOptIn": true,
+      "lastContactCenterCallDate": "2026-04-04"
+    },
+    {
+      "clientId": "C-100196",
+      "lastLoginDate": "2026-09-11",
+      "logins90d": 47,
+      "mobileAppUser": true,
+      "paperless": true,
+      "emailOptIn": true,
+      "lastContactCenterCallDate": "2026-01-21"
+    },
+    {
+      "clientId": "C-100197",
+      "lastLoginDate": "2026-09-09",
+      "logins90d": 11,
+      "mobileAppUser": true,
+      "paperless": true,
+      "emailOptIn": false,
+      "lastContactCenterCallDate": "2026-02-25"
+    },
+    {
+      "clientId": "C-100198",
+      "lastLoginDate": "2025-06-13",
+      "logins90d": 0,
+      "mobileAppUser": false,
+      "paperless": true,
+      "emailOptIn": false,
+      "lastContactCenterCallDate": null
+    },
+    {
+      "clientId": "C-100199",
+      "lastLoginDate": "2026-09-17",
+      "logins90d": 17,
+      "mobileAppUser": true,
+      "paperless": true,
+      "emailOptIn": true,
+      "lastContactCenterCallDate": "2025-07-19"
+    },
+    {
+      "clientId": "C-100200",
+      "lastLoginDate": "2026-09-16",
+      "logins90d": 60,
+      "mobileAppUser": false,
+      "paperless": false,
+      "emailOptIn": false,
+      "lastContactCenterCallDate": null
+    },
+    {
+      "clientId": "C-100201",
+      "lastLoginDate": "2026-09-05",
+      "logins90d": 21,
+      "mobileAppUser": false,
+      "paperless": true,
+      "emailOptIn": true,
+      "lastContactCenterCallDate": null
+    },
+    {
+      "clientId": "C-100202",
+      "lastLoginDate": "2026-09-07",
+      "logins90d": 53,
+      "mobileAppUser": false,
+      "paperless": false,
+      "emailOptIn": false,
+      "lastContactCenterCallDate": null
+    },
+    {
+      "clientId": "C-100203",
+      "lastLoginDate": "2025-11-14",
+      "logins90d": 0,
+      "mobileAppUser": false,
+      "paperless": true,
+      "emailOptIn": true,
+      "lastContactCenterCallDate": null
+    },
+    {
+      "clientId": "C-100204",
+      "lastLoginDate": "2026-09-30",
+      "logins90d": 11,
+      "mobileAppUser": true,
+      "paperless": false,
+      "emailOptIn": true,
+      "lastContactCenterCallDate": "2026-08-26"
+    },
+    {
+      "clientId": "C-100205",
+      "lastLoginDate": "2026-09-09",
+      "logins90d": 12,
+      "mobileAppUser": true,
+      "paperless": true,
+      "emailOptIn": false,
+      "lastContactCenterCallDate": null
+    },
+    {
+      "clientId": "C-100206",
+      "lastLoginDate": "2026-09-01",
+      "logins90d": 51,
+      "mobileAppUser": true,
+      "paperless": true,
+      "emailOptIn": false,
+      "lastContactCenterCallDate": null
+    },
+    {
+      "clientId": "C-100207",
+      "lastLoginDate": "2026-09-13",
+      "logins90d": 6,
+      "mobileAppUser": true,
+      "paperless": true,
+      "emailOptIn": false,
+      "lastContactCenterCallDate": null
+    },
+    {
+      "clientId": "C-100208",
+      "lastLoginDate": "2026-03-04",
+      "logins90d": 0,
+      "mobileAppUser": false,
+      "paperless": true,
+      "emailOptIn": true,
+      "lastContactCenterCallDate": "2026-09-28"
+    },
+    {
+      "clientId": "C-100209",
+      "lastLoginDate": "2026-09-04",
+      "logins90d": 48,
+      "mobileAppUser": true,
+      "paperless": true,
+      "emailOptIn": true,
+      "lastContactCenterCallDate": "2025-10-26"
+    },
+    {
+      "clientId": "C-100210",
+      "lastLoginDate": "2024-07-15",
+      "logins90d": 0,
+      "mobileAppUser": false,
+      "paperless": false,
+      "emailOptIn": true,
+      "lastContactCenterCallDate": "2025-02-02"
+    },
+    {
+      "clientId": "C-100211",
+      "lastLoginDate": "2026-09-02",
+      "logins90d": 41,
+      "mobileAppUser": true,
+      "paperless": true,
+      "emailOptIn": false,
+      "lastContactCenterCallDate": "2025-11-23"
+    },
+    {
+      "clientId": "C-100212",
+      "lastLoginDate": "2026-09-18",
+      "logins90d": 36,
+      "mobileAppUser": false,
+      "paperless": true,
+      "emailOptIn": true,
+      "lastContactCenterCallDate": null
+    },
+    {
+      "clientId": "C-100213",
+      "lastLoginDate": "2026-09-27",
+      "logins90d": 20,
+      "mobileAppUser": false,
+      "paperless": true,
+      "emailOptIn": false,
+      "lastContactCenterCallDate": null
+    },
+    {
+      "clientId": "C-100214",
+      "lastLoginDate": "2026-09-13",
+      "logins90d": 43,
+      "mobileAppUser": false,
+      "paperless": false,
+      "emailOptIn": true,
+      "lastContactCenterCallDate": "2025-07-13"
+    },
+    {
+      "clientId": "C-100215",
+      "lastLoginDate": "2026-09-07",
+      "logins90d": 8,
+      "mobileAppUser": true,
+      "paperless": false,
+      "emailOptIn": true,
+      "lastContactCenterCallDate": null
+    },
+    {
+      "clientId": "C-100216",
+      "lastLoginDate": "2026-09-12",
+      "logins90d": 14,
+      "mobileAppUser": false,
+      "paperless": true,
+      "emailOptIn": true,
+      "lastContactCenterCallDate": "2025-12-11"
+    },
+    {
+      "clientId": "C-100217",
+      "lastLoginDate": "2026-06-15",
+      "logins90d": 0,
+      "mobileAppUser": false,
+      "paperless": true,
+      "emailOptIn": true,
+      "lastContactCenterCallDate": "2026-06-10"
+    },
+    {
+      "clientId": "C-100218",
+      "lastLoginDate": "2026-09-07",
+      "logins90d": 14,
+      "mobileAppUser": false,
+      "paperless": true,
+      "emailOptIn": true,
+      "lastContactCenterCallDate": null
+    },
+    {
+      "clientId": "C-100219",
+      "lastLoginDate": "2026-09-11",
+      "logins90d": 28,
+      "mobileAppUser": false,
+      "paperless": true,
+      "emailOptIn": false,
+      "lastContactCenterCallDate": null
+    },
+    {
+      "clientId": "C-100220",
+      "lastLoginDate": "2026-03-21",
+      "logins90d": 0,
+      "mobileAppUser": false,
+      "paperless": true,
+      "emailOptIn": false,
+      "lastContactCenterCallDate": "2025-09-04"
+    },
+    {
+      "clientId": "C-100221",
+      "lastLoginDate": "2026-09-16",
+      "logins90d": 9,
+      "mobileAppUser": false,
+      "paperless": true,
+      "emailOptIn": false,
+      "lastContactCenterCallDate": null
+    },
+    {
+      "clientId": "C-100222",
+      "lastLoginDate": "2026-09-12",
+      "logins90d": 44,
+      "mobileAppUser": true,
+      "paperless": false,
+      "emailOptIn": true,
+      "lastContactCenterCallDate": null
+    },
+    {
+      "clientId": "C-100223",
+      "lastLoginDate": "2026-09-23",
+      "logins90d": 19,
+      "mobileAppUser": true,
+      "paperless": true,
+      "emailOptIn": true,
+      "lastContactCenterCallDate": "2025-11-29"
+    },
+    {
+      "clientId": "C-100224",
+      "lastLoginDate": "2026-09-10",
+      "logins90d": 29,
+      "mobileAppUser": true,
+      "paperless": false,
+      "emailOptIn": false,
+      "lastContactCenterCallDate": null
+    },
+    {
+      "clientId": "C-100225",
+      "lastLoginDate": "2025-05-07",
+      "logins90d": 0,
+      "mobileAppUser": false,
+      "paperless": true,
+      "emailOptIn": false,
+      "lastContactCenterCallDate": null
+    },
+    {
+      "clientId": "C-100226",
+      "lastLoginDate": "2026-09-08",
+      "logins90d": 41,
+      "mobileAppUser": true,
+      "paperless": true,
+      "emailOptIn": true,
+      "lastContactCenterCallDate": "2025-03-10"
+    },
+    {
+      "clientId": "C-100227",
+      "lastLoginDate": "2026-09-19",
+      "logins90d": 4,
+      "mobileAppUser": false,
+      "paperless": true,
+      "emailOptIn": true,
+      "lastContactCenterCallDate": null
+    },
+    {
+      "clientId": "C-100228",
+      "lastLoginDate": "2026-10-01",
+      "logins90d": 36,
+      "mobileAppUser": false,
+      "paperless": true,
+      "emailOptIn": false,
+      "lastContactCenterCallDate": "2026-02-20"
+    },
+    {
+      "clientId": "C-100229",
+      "lastLoginDate": "2026-09-21",
+      "logins90d": 42,
+      "mobileAppUser": true,
+      "paperless": true,
+      "emailOptIn": true,
+      "lastContactCenterCallDate": "2024-12-22"
+    },
+    {
+      "clientId": "C-100230",
+      "lastLoginDate": "2026-09-25",
+      "logins90d": 9,
+      "mobileAppUser": true,
+      "paperless": false,
+      "emailOptIn": false,
+      "lastContactCenterCallDate": null
+    },
+    {
+      "clientId": "C-100231",
+      "lastLoginDate": "2026-09-29",
+      "logins90d": 15,
+      "mobileAppUser": false,
+      "paperless": false,
+      "emailOptIn": false,
+      "lastContactCenterCallDate": null
+    },
+    {
+      "clientId": "C-100232",
+      "lastLoginDate": "2026-09-20",
+      "logins90d": 38,
+      "mobileAppUser": false,
+      "paperless": true,
+      "emailOptIn": true,
+      "lastContactCenterCallDate": null
+    },
+    {
+      "clientId": "C-100233",
+      "lastLoginDate": "2026-09-07",
+      "logins90d": 28,
+      "mobileAppUser": true,
+      "paperless": true,
+      "emailOptIn": true,
+      "lastContactCenterCallDate": "2025-02-16"
+    },
+    {
+      "clientId": "C-100234",
+      "lastLoginDate": "2026-09-29",
+      "logins90d": 37,
+      "mobileAppUser": true,
+      "paperless": true,
+      "emailOptIn": true,
+      "lastContactCenterCallDate": null
+    },
+    {
+      "clientId": "C-100235",
+      "lastLoginDate": "2026-09-24",
+      "logins90d": 33,
+      "mobileAppUser": true,
+      "paperless": false,
+      "emailOptIn": true,
+      "lastContactCenterCallDate": null
+    },
+    {
+      "clientId": "C-100236",
+      "lastLoginDate": "2026-10-01",
+      "logins90d": 18,
+      "mobileAppUser": false,
+      "paperless": false,
+      "emailOptIn": true,
+      "lastContactCenterCallDate": "2026-07-01"
+    },
+    {
+      "clientId": "C-100237",
+      "lastLoginDate": "2026-09-30",
+      "logins90d": 16,
+      "mobileAppUser": true,
+      "paperless": true,
+      "emailOptIn": true,
+      "lastContactCenterCallDate": "2025-07-17"
+    },
+    {
+      "clientId": "C-100238",
+      "lastLoginDate": "2026-09-03",
+      "logins90d": 56,
+      "mobileAppUser": true,
+      "paperless": true,
+      "emailOptIn": true,
+      "lastContactCenterCallDate": "2024-10-29"
+    },
+    {
+      "clientId": "C-100239",
+      "lastLoginDate": "2026-09-27",
+      "logins90d": 22,
+      "mobileAppUser": true,
+      "paperless": false,
+      "emailOptIn": false,
+      "lastContactCenterCallDate": null
+    },
+    {
+      "clientId": "C-100240",
+      "lastLoginDate": "2026-09-15",
+      "logins90d": 50,
+      "mobileAppUser": true,
+      "paperless": true,
+      "emailOptIn": true,
+      "lastContactCenterCallDate": "2026-06-20"
+    },
+    {
+      "clientId": "C-100241",
+      "lastLoginDate": "2024-10-20",
+      "logins90d": 0,
+      "mobileAppUser": false,
+      "paperless": false,
+      "emailOptIn": true,
+      "lastContactCenterCallDate": null
+    },
+    {
+      "clientId": "C-100242",
+      "lastLoginDate": "2026-09-05",
+      "logins90d": 4,
+      "mobileAppUser": false,
+      "paperless": true,
+      "emailOptIn": true,
+      "lastContactCenterCallDate": "2024-12-17"
+    },
+    {
+      "clientId": "C-100243",
+      "lastLoginDate": "2026-09-30",
+      "logins90d": 41,
+      "mobileAppUser": true,
+      "paperless": true,
+      "emailOptIn": false,
+      "lastContactCenterCallDate": "2026-01-16"
+    },
+    {
+      "clientId": "C-100244",
+      "lastLoginDate": "2024-12-02",
+      "logins90d": 0,
+      "mobileAppUser": false,
+      "paperless": false,
+      "emailOptIn": false,
+      "lastContactCenterCallDate": null
+    },
+    {
+      "clientId": "C-100245",
+      "lastLoginDate": "2025-07-07",
+      "logins90d": 0,
+      "mobileAppUser": false,
+      "paperless": true,
+      "emailOptIn": true,
+      "lastContactCenterCallDate": "2026-02-05"
+    },
+    {
+      "clientId": "C-100246",
+      "lastLoginDate": "2026-09-12",
+      "logins90d": 34,
+      "mobileAppUser": true,
+      "paperless": true,
+      "emailOptIn": true,
+      "lastContactCenterCallDate": null
+    },
+    {
+      "clientId": "C-100247",
+      "lastLoginDate": "2026-09-07",
+      "logins90d": 25,
+      "mobileAppUser": false,
+      "paperless": false,
+      "emailOptIn": false,
+      "lastContactCenterCallDate": "2026-01-05"
+    },
+    {
+      "clientId": "C-100248",
+      "lastLoginDate": "2026-10-01",
+      "logins90d": 32,
+      "mobileAppUser": true,
+      "paperless": true,
+      "emailOptIn": true,
+      "lastContactCenterCallDate": null
+    },
+    {
+      "clientId": "C-100249",
+      "lastLoginDate": "2026-09-24",
+      "logins90d": 16,
+      "mobileAppUser": true,
+      "paperless": true,
+      "emailOptIn": false,
+      "lastContactCenterCallDate": "2024-12-12"
+    },
+    {
+      "clientId": "C-100250",
+      "lastLoginDate": "2024-12-01",
+      "logins90d": 0,
+      "mobileAppUser": false,
+      "paperless": true,
+      "emailOptIn": true,
+      "lastContactCenterCallDate": null
+    },
+    {
+      "clientId": "C-999999",
+      "lastLoginDate": "2026-09-20",
+      "logins90d": 4,
+      "mobileAppUser": false,
+      "paperless": true,
+      "emailOptIn": false,
+      "lastContactCenterCallDate": null
+    }
+  ]
+}
