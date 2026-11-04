@@ -142,15 +142,16 @@
   <text x="1045" y="612" class="lb" text-anchor="middle">future: segment_results</text>
   <path d="M860,505 H918" stroke="#9673a6" stroke-width="1.6" marker-start="url(#arr)" marker-end="url(#arr)"/>
 
-  <!-- Ingest -->
+  <!-- IngestionService -->
   <rect x="240" y="770" width="200" height="60" rx="8" fill="#f5f5f5" stroke="#999"/>
   <text x="340" y="797" class="m" text-anchor="middle">data/*.json</text>
   <text x="340" y="813" class="lb" text-anchor="middle">synthetic, read-only</text>
   <path d="M440,800 H498" stroke="#333" stroke-width="1.4" marker-end="url(#arr)"/>
   <rect x="500" y="770" width="360" height="60" rx="8" fill="#fff" stroke="#9673a6"/>
-  <text x="680" y="794" class="t" text-anchor="middle">ingest/ (one-shot container)</text>
-  <text x="680" y="813" class="s" text-anchor="middle">validate → staging collections → atomic swap · seed rule sets</text>
+  <text x="680" y="794" class="t" text-anchor="middle">IngestionService (one-shot container)</text>
+  <text x="680" y="813" class="s" text-anchor="middle">validates data + seeds rule sets → updates MongoDB</text>
   <path d="M860,800 H1045 V672" fill="none" stroke="#333" stroke-width="1.4" marker-end="url(#arr)"/>
+  <text x="1052" y="740" class="lb">updates MongoDB</text>
   <!-- arrows drawn last so heads sit above boxes -->
   <path d="M190,125 H258" stroke="#333" stroke-width="1.4" marker-end="url(#arr)"/>
   <path d="M258,150 H192" stroke="#4d8a42" stroke-width="1.6" stroke-dasharray="5 3" marker-end="url(#arrg)"/>
