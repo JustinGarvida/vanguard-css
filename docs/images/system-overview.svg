@@ -1,0 +1,128 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700" width="1200" height="700" font-family="Helvetica, Arial, sans-serif">
+  <title>Client Segmentation Service: system overview and data retrieval</title>
+  <defs>
+    <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#333"/>
+    </marker>
+    <marker id="arrg" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#4d8a42"/>
+    </marker>
+    <style>
+      .t  { font-size: 13px; font-weight: bold; fill: #1f2937; }
+      .s  { font-size: 11px; fill: #374151; }
+      .m  { font-size: 11px; fill: #374151; font-family: "Courier New", monospace; }
+      .lb { font-size: 10px; fill: #4b5563; }
+      .h  { font-size: 14px; font-weight: bold; fill: #1f2937; }
+    </style>
+  </defs>
+  <rect width="1200" height="700" fill="#ffffff"/>
+  <text x="30" y="34" class="h" font-size="18">Client Segmentation Service: system overview and segment retrieval</text>
+
+  <!-- Consumers -->
+  <text x="30" y="72" class="h">External Vanguard microservices</text>
+  <rect x="30" y="88" width="200" height="42" rx="8" fill="#f5f5f5" stroke="#666"/>
+  <text x="130" y="114" class="t" text-anchor="middle">Web / mobile backend</text>
+  <rect x="30" y="140" width="200" height="42" rx="8" fill="#f5f5f5" stroke="#666"/>
+  <text x="130" y="166" class="t" text-anchor="middle">Contact-center service</text>
+  <rect x="30" y="192" width="200" height="42" rx="8" fill="#f5f5f5" stroke="#666"/>
+  <text x="130" y="218" class="t" text-anchor="middle">Marketing / offers service</text>
+  <rect x="30" y="244" width="200" height="42" rx="8" fill="#ffffff" stroke="#999" stroke-dasharray="5 4"/>
+  <text x="130" y="270" class="s" text-anchor="middle">Demo dashboard (FR-18)</text>
+  <rect x="30" y="296" width="200" height="42" rx="8" fill="#ffffff" stroke="#999" stroke-dasharray="5 4"/>
+  <text x="130" y="322" class="s" text-anchor="middle">Intent service (future extension)</text>
+  <text x="30" y="362" class="lb">HTTP/JSON · X-Request-ID · X-Consumer-Id</text>
+  <text x="30" y="377" class="lb">clients generated from /openapi.json</text>
+
+  <!-- FastAPI container -->
+  <rect x="280" y="60" width="560" height="420" rx="12" fill="#eef4fb" stroke="#6c8ebf" stroke-width="1.5"/>
+  <text x="298" y="84" class="h">Segmentation Service (FastAPI · Docker)</text>
+
+  <rect x="300" y="100" width="520" height="62" rx="8" fill="#fff" stroke="#6c8ebf"/>
+  <text x="560" y="123" class="t" text-anchor="middle">① API layer: routers · Pydantic schemas · middleware</text>
+  <text x="560" y="143" class="m" text-anchor="middle">GET /v1/clients/{clientId}/segments · POST /v1/segments:batch</text>
+
+  <rect x="300" y="182" width="520" height="58" rx="8" fill="#d5e8d4" stroke="#82b366"/>
+  <text x="560" y="205" class="t" text-anchor="middle">② SegmentationService (orchestrator)</text>
+  <text x="560" y="224" class="s" text-anchor="middle">families requested + dependencies → facts needed → data types to load</text>
+
+  <path d="M560,162 V180" stroke="#333" stroke-width="1.4" marker-end="url(#arr)"/>
+
+  <!-- bottom row: engine, facts, repos -->
+  <rect x="300" y="265" width="160" height="110" rx="8" fill="#fff2cc" stroke="#d6b656"/>
+  <text x="380" y="287" class="t" text-anchor="middle">⑤ Rule engine</text>
+  <text x="380" y="306" class="s" text-anchor="middle">pure function</text>
+  <text x="380" y="322" class="s" text-anchor="middle">bands · value map</text>
+  <text x="380" y="337" class="s" text-anchor="middle">range · predicates</text>
+  <text x="380" y="355" class="lb" text-anchor="middle">no I/O, no clock</text>
+
+  <rect x="480" y="265" width="160" height="110" rx="8" fill="#fff" stroke="#6c8ebf"/>
+  <text x="560" y="287" class="t" text-anchor="middle">④ Fact deriver</text>
+  <text x="560" y="306" class="s" text-anchor="middle">age · qualifyingBalance</text>
+  <text x="560" y="322" class="s" text-anchor="middle">heldOpenAccountTypes</text>
+  <text x="560" y="337" class="s" text-anchor="middle">daysSinceLogin · …</text>
+  <text x="560" y="355" class="s" text-anchor="middle">+ DataQuality notes</text>
+
+  <rect x="660" y="265" width="160" height="110" rx="8" fill="#fff" stroke="#6c8ebf"/>
+  <text x="740" y="287" class="t" text-anchor="middle">③ Repositories</text>
+  <text x="740" y="306" class="s" text-anchor="middle">one per data type</text>
+  <text x="740" y="322" class="s" text-anchor="middle">Profile · Accounts</text>
+  <text x="740" y="337" class="s" text-anchor="middle">Engagement · Advice</text>
+  <text x="740" y="355" class="s" text-anchor="middle">only types needed</text>
+
+  <path d="M380,240 V263" stroke="#333" stroke-width="1.4" marker-end="url(#arr)"/>
+  <path d="M560,240 V263" stroke="#333" stroke-width="1.4" marker-end="url(#arr)"/>
+  <path d="M740,240 V263" stroke="#333" stroke-width="1.4" marker-end="url(#arr)"/>
+
+  <!-- rulesets -->
+  <path d="M300,400 h160 v48 q-20,-10 -40,0 t-40,0 t-40,0 t-40,0 z" fill="#fff2cc" stroke="#d6b656"/>
+  <text x="380" y="420" class="t" text-anchor="middle">Rule-set registry</text>
+  <text x="380" y="437" class="s" text-anchor="middle">rulesets collection · cached</text>
+  <path d="M380,400 V377" stroke="#d6b656" stroke-width="1.4" marker-end="url(#arr)"/>
+
+  <text x="660" y="420" class="lb">snapshot session</text>
+  <text x="660" y="434" class="lb">one snapshot per request</text>
+
+  <!-- MongoDB -->
+  <path d="M890,190 a140,22 0 0,0 280,0 a140,22 0 0,0 -280,0 v240 a140,22 0 0,0 280,0 v-240" fill="#e1d5e7" stroke="#9673a6" stroke-width="1.5"/>
+  <text x="1030" y="240" class="h" text-anchor="middle">MongoDB 7</text>
+  <text x="1030" y="258" class="lb" text-anchor="middle">single-node replica set · one collection per data type</text>
+  <text x="910" y="290" class="t">Profile</text>      <text x="1010" y="290" class="m">clients</text>
+  <text x="910" y="314" class="t">Accounts</text>     <text x="1010" y="314" class="m">accounts</text>
+  <text x="1010" y="329" class="lb">ownerClientIds[] · holdings[]</text>
+  <text x="910" y="353" class="t">Engagement</text>   <text x="1010" y="353" class="m">engagement</text>
+  <text x="910" y="377" class="t">Advice</text>       <text x="1010" y="377" class="m">advice</text>
+  <text x="910" y="401" class="t">Rules</text>        <text x="1010" y="401" class="m">rulesets · settings</text>
+  <text x="910" y="425" class="t">Ingestion</text>    <text x="1010" y="425" class="m">ingestion_runs/_issues</text>
+  <path d="M820,320 H888" stroke="#9673a6" stroke-width="1.6" marker-start="url(#arr)" marker-end="url(#arr)"/>
+  <text x="824" y="312" class="lb">find()</text>
+
+  <!-- Ingest -->
+  <rect x="890" y="510" width="280" height="70" rx="8" fill="#fff" stroke="#9673a6"/>
+  <text x="1030" y="535" class="t" text-anchor="middle">Ingest job (python -m ingest)</text>
+  <text x="1030" y="553" class="s" text-anchor="middle">validate · Decimal128 · seed rule sets</text>
+  <text x="1030" y="568" class="s" text-anchor="middle">reject bad DOB · quarantine orphans</text>
+  <rect x="890" y="610" width="280" height="44" rx="8" fill="#f5f5f5" stroke="#999"/>
+  <text x="1030" y="637" class="m" text-anchor="middle">data/*.json · rulesets/*.json</text>
+  <path d="M1030,610 V582" stroke="#333" stroke-width="1.4" marker-end="url(#arr)"/>
+  <path d="M1030,510 V455" stroke="#333" stroke-width="1.4" marker-end="url(#arr)"/>
+
+  <!-- Response contract -->
+  <path d="M560,480 V508" stroke="#4d8a42" stroke-width="2" marker-end="url(#arrg)"/>
+  <text x="568" y="499" class="lb" fill="#4d8a42">⑥ 200 SegmentResponse → back to the calling microservice</text>
+
+  <rect x="280" y="510" width="560" height="170" rx="10" fill="#eaf5e7" stroke="#82b366"/>
+  <text x="298" y="534" class="t">Uniform response: every family returns the same FamilyResult</text>
+  <text x="298" y="558" class="m">"segments": {</text>
+  <text x="298" y="574" class="m">  "SERVICE_TIER": {"status":"ASSIGNED","values":["FLAGSHIP"]},</text>
+  <text x="298" y="590" class="m">  "LIFE_STAGE":   {"status":"OTHER","values":[],"reason":"MISSING_DOB"},</text>
+  <text x="298" y="606" class="m">  "ENGAGEMENT":   {"status":"NONE","values":[]},</text>
+  <text x="298" y="622" class="m">  "OPPORTUNITY":  {"status":"ASSIGNED","values":["ROLLOVER_CANDIDATE"]}</text>
+  <text x="298" y="638" class="m">}, "signals": {...}, "dataQuality": [...], "ruleSetVersion": "1.0.0"</text>
+  <text x="298" y="664" class="s">Consumers check membership the same way for every family:  "FLAGSHIP" in segments.SERVICE_TIER.values</text>
+    <!-- Consumer arrows -->
+  <path d="M230,109 C266,109 266,124 298,124" fill="none" stroke="#333" stroke-width="1.4" marker-end="url(#arr)"/>
+  <path d="M230,161 C266,161 266,129 298,129" fill="none" stroke="#333" stroke-width="1.4" marker-end="url(#arr)"/>
+  <path d="M230,213 C266,213 266,134 298,134" fill="none" stroke="#333" stroke-width="1.4" marker-end="url(#arr)"/>
+  <path d="M230,265 C266,265 266,139 298,139" fill="none" stroke="#999" stroke-width="1.4" stroke-dasharray="4 3" marker-end="url(#arr)"/>
+  <path d="M230,317 C266,317 266,144 298,144" fill="none" stroke="#999" stroke-width="1.4" stroke-dasharray="4 3" marker-end="url(#arr)"/>
+</svg>
