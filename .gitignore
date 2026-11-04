@@ -3,3 +3,6 @@
 
 # Ignore Python Cache
 __pycache__/
+
+# Ignore macOS Finder metadata
+.DS_Store
