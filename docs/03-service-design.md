@@ -829,6 +829,23 @@ Every error uses the envelope `{ "error": { "code", "message", "correlationId", 
 
 Intent and sentiment are **not part of the first build**. They will come later as a separate consumer of the segment API. This section records what that extension will need, so the segment service is built to support it now.
 
+### 9.0 v2 architecture
+
+![v2: Intent Service consuming the Segmentation Service](images/intent-service-v2.svg)
+
+Editable source: [`architecture-v2.drawio`](architecture-v2.drawio).
+
+The Intent Service is a **separate FastAPI service** that treats the Segmentation Service (v1) as a dependency. v1 does not change.
+
+1. **A message arrives.** A client-facing channel calls `POST /v1/interactions:classify` with `{ clientId, message }`.
+2. **Two lookups run in parallel.** The `InteractionService` runs both with `asyncio.gather`:
+   - **②a Classification path.** The Text Preprocessor cleans the message. The Intent Classifier returns the top-3 intents with confidence, falling back to `UNKNOWN` below 0.45. The Sentiment Analyzer returns POSITIVE, NEUTRAL, or NEGATIVE with confidence. Both models are versioned artifacts loaded at startup.
+   - **②b Segment lookup.** The Segment Client calls `GET /v1/clients/{id}/segments?families=SERVICE_TIER,ADVICE,OPPORTUNITY,ENGAGEMENT` and reads the uniform `FamilyResult`s.
+3. **Routing.** The **Routing Policy Engine** combines intent, sentiment, and segments using rules stored as data (`routing-policy/v1.json`), the same versioned pattern as segment rule sets. It produces a routing action and `escalationSuggested`.
+4. **The response.** It returns the intent, the sentiment, the segments it used (passed through unchanged), the routing decision, and both `classifierVersion` and `ruleSetVersion`, for reproducibility.
+
+The Intent Service never reads MongoDB or segment rule sets directly. Everything it knows about the client comes through the public segment API.
+
 ### 9.1 How it will use segments
 
 ```mermaid

@@ -1,0 +1,185 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 900" width="1400" height="900" font-family="Helvetica, Arial, sans-serif">
+  <title>v2: Intent Service consuming the Segmentation Service</title>
+  <defs>
+    <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#333"/>
+    </marker>
+    <marker id="arrp" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#9673a6"/>
+    </marker>
+    <marker id="arry" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#b8962e"/>
+    </marker>
+    <marker id="arrg" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#4d8a42"/>
+    </marker>
+    <marker id="arrb" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#2f6db5"/>
+    </marker>
+    <style>
+      .t  { font-size: 13px; font-weight: bold; fill: #1f2937; }
+      .d  { font-size: 11px; font-style: italic; fill: #1f2937; }
+      .b  { font-size: 10.5px; fill: #374151; }
+      .s  { font-size: 11px; fill: #374151; }
+      .m  { font-size: 11px; fill: #374151; font-family: "Courier New", monospace; }
+      .lb { font-size: 10px; fill: #4b5563; }
+      .h  { font-size: 14px; font-weight: bold; fill: #1f2937; }
+    </style>
+  </defs>
+  <rect width="1400" height="900" fill="#ffffff"/>
+  <text x="30" y="34" class="h" font-size="18">v2 (future extension): Intent Service consuming the Segmentation Service</text>
+
+  <!-- Consumers -->
+  <text x="30" y="72" class="h">Client-facing channels</text>
+  <rect x="30" y="88"  width="200" height="42" rx="8" fill="#f5f5f5" stroke="#666"/>
+  <text x="130" y="114" class="t" text-anchor="middle">Contact-center chat</text>
+  <rect x="30" y="140" width="200" height="42" rx="8" fill="#f5f5f5" stroke="#666"/>
+  <text x="130" y="166" class="t" text-anchor="middle">Web / mobile assistant</text>
+  <rect x="30" y="192" width="200" height="42" rx="8" fill="#ffffff" stroke="#999" stroke-dasharray="5 4"/>
+  <text x="130" y="218" class="s" text-anchor="middle">Demo dashboard (FR-18)</text>
+  <text x="30" y="256" class="lb">① POST /v1/interactions:classify</text>
+  <text x="30" y="270" class="m">{ "clientId", "message" }</text>
+
+  <!-- models -->
+  <path d="M30,440 h200 v58 q-25,-12 -50,0 t-50,0 t-50,0 t-50,0 z" fill="#dbe8f7" stroke="#2f6db5"/>
+  <text x="130" y="462" class="t" text-anchor="middle">models/</text>
+  <text x="130" y="480" class="m" text-anchor="middle">intent-0.1.0.joblib</text>
+  <text x="130" y="494" class="m" text-anchor="middle">sentiment-0.1.0.joblib</text>
+
+  <!-- Steps legend -->
+  <text x="30" y="560" class="t">How a message flows</text>
+  <text x="30" y="580" class="b">① Channel sends message + clientId</text>
+  <text x="30" y="598" class="b">②a Classify text: intent + sentiment</text>
+  <text x="30" y="616" class="b">②b Fetch segments from the</text>
+  <text x="44" y="630" class="b">Segmentation Service (in parallel)</text>
+  <text x="30" y="648" class="b">③ Routing policy combines all three</text>
+  <text x="30" y="666" class="b">④ Response returned to the channel</text>
+
+  <!-- Intent Service container -->
+  <rect x="270" y="60" width="740" height="590" rx="12" fill="#eef4fb" stroke="#2f6db5" stroke-width="1.5"/>
+  <text x="288" y="84" class="h">Intent Service (FastAPI · Docker) · separate service</text>
+
+  <rect x="290" y="100" width="700" height="56" rx="8" fill="#fff" stroke="#2f6db5"/>
+  <text x="640" y="122" class="t" text-anchor="middle">API layer: routers · Pydantic schemas · middleware</text>
+  <text x="640" y="141" class="m" text-anchor="middle">POST /v1/interactions:classify · GET /health · /openapi.json</text>
+
+  <rect x="290" y="172" width="700" height="56" rx="8" fill="#d5e8d4" stroke="#82b366"/>
+  <text x="640" y="194" class="t" text-anchor="middle">InteractionService (orchestrator)</text>
+  <text x="640" y="213" class="m" text-anchor="middle">asyncio.gather(classify(message), segments(clientId)) → route → respond</text>
+
+  <!-- classification group -->
+  <rect x="282" y="246" width="556" height="190" rx="10" fill="none" stroke="#2f6db5" stroke-dasharray="6 4"/>
+  <text x="290" y="244" class="lb" dy="-4">②a classification path</text>
+
+  <!-- Text Preprocessor -->
+  <rect x="290" y="256" width="170" height="170" rx="8" fill="#fff" stroke="#2f6db5"/>
+  <text x="375" y="277" class="t" text-anchor="middle">Text Preprocessor</text>
+  <text x="300" y="296" class="d">Cleans the message</text>
+  <text x="300" y="310" class="d">before classifying it.</text>
+  <text x="300" y="332" class="b">• Normalize case + spacing</text>
+  <text x="300" y="350" class="b">• Fix common typos / slang</text>
+  <text x="300" y="368" class="b">• Detect Spanish language</text>
+  <text x="300" y="386" class="b">• Keep the final ask in</text>
+  <text x="310" y="400" class="b">long messages</text>
+
+  <!-- Intent Classifier -->
+  <rect x="475" y="256" width="170" height="170" rx="8" fill="#dbe8f7" stroke="#2f6db5"/>
+  <text x="560" y="277" class="t" text-anchor="middle">Intent Classifier</text>
+  <text x="485" y="296" class="d">Maps text to one of 45</text>
+  <text x="485" y="310" class="d">catalog intents.</text>
+  <text x="485" y="332" class="b">• TF-IDF + logistic</text>
+  <text x="495" y="346" class="b">regression baseline</text>
+  <text x="485" y="364" class="b">• Top-3 labels + confidence</text>
+  <text x="485" y="382" class="b">• Confidence &lt; 0.45 →</text>
+  <text x="495" y="396" class="b">UNKNOWN</text>
+  <text x="485" y="414" class="b">• Pluggable (LLM later)</text>
+
+  <!-- Sentiment Analyzer -->
+  <rect x="660" y="256" width="170" height="170" rx="8" fill="#dbe8f7" stroke="#2f6db5"/>
+  <text x="745" y="277" class="t" text-anchor="middle">Sentiment Analyzer</text>
+  <text x="670" y="296" class="d">Scores the tone of the</text>
+  <text x="670" y="310" class="d">client's message.</text>
+  <text x="670" y="332" class="b">• POSITIVE / NEUTRAL /</text>
+  <text x="680" y="346" class="b">NEGATIVE + confidence</text>
+  <text x="670" y="364" class="b">• Detects repeat-contact</text>
+  <text x="680" y="378" class="b">phrases ("third time")</text>
+  <text x="670" y="396" class="b">• Model loaded at startup</text>
+
+  <!-- Segment Client -->
+  <rect x="845" y="256" width="145" height="170" rx="8" fill="#fff2cc" stroke="#d6b656"/>
+  <text x="917" y="277" class="t" text-anchor="middle">Segment Client</text>
+  <text x="855" y="296" class="d">Fetches segments</text>
+  <text x="855" y="310" class="d">from the Segmentation</text>
+  <text x="855" y="324" class="d">Service.</text>
+  <text x="855" y="346" class="b">• Typed client from</text>
+  <text x="865" y="360" class="b">its OpenAPI spec</text>
+  <text x="855" y="378" class="b">• Requests only the</text>
+  <text x="865" y="392" class="b">families routing needs</text>
+  <text x="855" y="410" class="b">• Reads FamilyResult</text>
+  <text x="924" y="244" class="lb" dy="-4">②b in parallel</text>
+
+  <!-- Routing Policy Engine -->
+  <rect x="290" y="480" width="700" height="150" rx="8" fill="#d5e8d4" stroke="#82b366"/>
+  <text x="640" y="502" class="t" text-anchor="middle">③ Routing Policy Engine</text>
+  <text x="302" y="522" class="d">Combines intent, sentiment, and segments into one routing decision and escalation flag.</text>
+  <text x="302" y="544" class="b">• Rules as data (routing-policy/v1.json), same versioned pattern as segment rule sets</text>
+  <text x="302" y="562" class="b">• e.g. ADVICE_INTEREST + ADVICE_PROSPECT → advice-lead queue</text>
+  <text x="302" y="580" class="b">• e.g. ADVICE_INTEREST + HUMAN_ADVISED → the client's own advisor</text>
+  <text x="302" y="598" class="b">• escalationSuggested: NEGATIVE ≥ 0.7, or TALK_TO_HUMAN / COMPLAINT / FRAUD_REPORT / REPORT_DEATH</text>
+  <text x="302" y="616" class="b">• FLAGSHIP / FLAGSHIP_SELECT tiers → tier-appropriate service channel</text>
+
+  <!-- Segmentation Service (v1) -->
+  <rect x="1060" y="200" width="310" height="170" rx="10" fill="#eef4fb" stroke="#6c8ebf" stroke-width="1.5"/>
+  <text x="1215" y="224" class="t" text-anchor="middle">Segmentation Service (v1)</text>
+  <text x="1215" y="240" class="lb" text-anchor="middle">this build · unchanged by v2</text>
+  <text x="1072" y="262" class="d">Returns a client's segments for any caller.</text>
+  <text x="1072" y="284" class="m">GET /v1/clients/{id}/segments</text>
+  <text x="1072" y="299" class="m">?families=SERVICE_TIER,ADVICE,</text>
+  <text x="1072" y="314" class="m">  OPPORTUNITY,ENGAGEMENT</text>
+  <text x="1072" y="336" class="b">• Uniform FamilyResult per family + signals</text>
+  <text x="1072" y="354" class="b">• Intent Service is just another consumer</text>
+
+  <path d="M1100,420 a115,18 0 0,0 230,0 a115,18 0 0,0 -230,0 v100 a115,18 0 0,0 230,0 v-100" fill="#e1d5e7" stroke="#9673a6" stroke-width="1.5"/>
+  <text x="1215" y="462" class="t" text-anchor="middle">MongoDB</text>
+  <text x="1215" y="480" class="lb" text-anchor="middle">client data + segment rule sets</text>
+  <text x="1215" y="496" class="lb" text-anchor="middle">(never read by the Intent Service)</text>
+  <path d="M1215,370 V400" stroke="#9673a6" stroke-width="1.6" marker-end="url(#arrp)"/>
+
+  <!-- routing policy config -->
+  <path d="M1100,570 h230 v52 q-28.75,-12 -57.5,0 t-57.5,0 t-57.5,0 t-57.5,0 z" fill="#d5e8d4" stroke="#82b366"/>
+  <text x="1215" y="592" class="t" text-anchor="middle">routing-policy/v1.json</text>
+  <text x="1215" y="608" class="lb" text-anchor="middle">intent × segment rules · thresholds</text>
+
+  <!-- Response -->
+  <rect x="270" y="680" width="740" height="200" rx="10" fill="#eaf5e7" stroke="#82b366"/>
+  <text x="288" y="704" class="t">④ Response: intent + sentiment + the segments used + routing decision</text>
+  <text x="288" y="728" class="m">{</text>
+  <text x="288" y="744" class="m">  "intent":    {"label":"ADVICE_INTEREST","confidence":0.82,"topK":[...]},</text>
+  <text x="288" y="760" class="m">  "sentiment": {"label":"NEUTRAL","confidence":0.77,"escalationSuggested":false},</text>
+  <text x="288" y="776" class="m">  "segments":  {"ADVICE":{"status":"ASSIGNED","values":["SELF_DIRECTED"]},</text>
+  <text x="288" y="792" class="m">                "OPPORTUNITY":{"status":"ASSIGNED","values":["ADVICE_PROSPECT"]}},</text>
+  <text x="288" y="808" class="m">  "routing":   {"action":"ADVICE_LEAD_QUEUE","reason":"ADVICE_INTEREST + ADVICE_PROSPECT"},</text>
+  <text x="288" y="824" class="m">  "classifierVersion": "intent-0.1.0", "ruleSetVersion": "1.0.0"</text>
+  <text x="288" y="840" class="m">}</text>
+  <text x="288" y="864" class="s">segments are passed through unchanged from the Segmentation Service (same FamilyResult shape)</text>
+
+  <!-- Arrows (drawn last) -->
+  <path d="M230,109 C254,109 262,124 288,124" fill="none" stroke="#333" stroke-width="1.4" marker-end="url(#arr)"/>
+  <path d="M230,161 C254,161 262,130 288,130" fill="none" stroke="#333" stroke-width="1.4" marker-end="url(#arr)"/>
+  <path d="M230,213 C256,213 262,136 288,136" fill="none" stroke="#999" stroke-width="1.4" stroke-dasharray="4 3" marker-end="url(#arr)"/>
+  <path d="M640,156 V170" stroke="#333" stroke-width="1.4" marker-end="url(#arr)"/>
+  <path d="M560,228 V244" stroke="#333" stroke-width="1.4" marker-end="url(#arr)"/>
+  <path d="M917,228 V254" stroke="#333" stroke-width="1.4" marker-end="url(#arr)"/>
+  <path d="M460,341 H473" stroke="#2f6db5" stroke-width="1.6" marker-end="url(#arrb)"/>
+  <path d="M375,426 V446 H745 V428" fill="none" stroke="#2f6db5" stroke-width="1.4" marker-end="url(#arrb)"/>
+  <text x="385" y="460" class="lb">cleaned text to both models</text>
+  <path d="M230,470 H252 V340 H280" fill="none" stroke="#2f6db5" stroke-width="1.4" stroke-dasharray="4 3" marker-end="url(#arrb)"/>
+  <path d="M600,426 V478" stroke="#333" stroke-width="1.4" marker-end="url(#arr)"/>
+  <path d="M800,426 V478" stroke="#333" stroke-width="1.4" marker-end="url(#arr)"/>
+  <path d="M917,426 V478" stroke="#b8962e" stroke-width="1.6" marker-end="url(#arry)"/>
+  <path d="M990,300 H1058" stroke="#b8962e" stroke-width="1.8" marker-start="url(#arry)" marker-end="url(#arry)"/>
+  <text x="1000" y="292" class="lb">GET segments</text>
+  <text x="1000" y="316" class="lb">FamilyResult</text>
+  <path d="M1100,596 H992" stroke="#82b366" stroke-width="1.6" marker-end="url(#arrg)"/>
+  <path d="M640,650 V678" stroke="#4d8a42" stroke-width="2" marker-end="url(#arrg)"/>
+</svg>
