@@ -61,29 +61,69 @@ flowchart LR
     end
 
     DB[(MongoDB<br/>collections per data type<br/>+ rulesets)]
-    ING[Ingest job<br/>validate + load]
+    ING[IngestionService<br/>validates + updates MongoDB]
     SRC[data/*.json<br/>rulesets/*.json seeds]
 
     MS1 & MS2 & MS3 & DASH & INT -->|GET /v1/clients/id/segments| API
     API --> SVC --> REPO --> DB
     SVC --> FACT --> ENG
     RSR --> ENG
-    RSR --> DB
+    RSR <-->|rulesets + settings| DB
     SRC --> ING --> DB
 ```
 
 ### 2.1 Components (NFR-03)
 
-| Component | Responsibility | Must not |
-|---|---|---|
-| **API layer** (FastAPI routers, schemas, middleware) | HTTP routing, request and response validation, error envelope, request IDs, logging | Contain segmentation logic |
-| **SegmentationService** | Orchestrate one request: resolve families, then the data types they need, load, derive, evaluate, build the response | Run queries or apply thresholds itself |
-| **Data-type repositories** | One repository per data type. Each fetches that type's documents for a client with indexed queries. | Filter by business rules (for example, "only OPEN accounts"). That is the fact deriver's job, so it stays configurable and traceable. |
-| **Rule-set registry** | Load, validate, and cache rule-set documents. Track which version is active. | Evaluate rules |
-| **Fact deriver and quality checks** | Turn typed records into facts as of `asOfDate`, and emit `DataQualityNote`s | Know segment names |
-| **Rule engine** | Evaluate the rule set against facts. It is a pure function with no I/O and no clock reads. | Hard-code thresholds or segment names |
-| **Ingest job** | Validate `data/*.json`, reject or quarantine bad records, load MongoDB, and seed rule sets | Run on the request path |
-| **Intent service** *(future extension)* | Classify client text and enrich the result with segments by calling the segment API (§9). It would be a separate consumer, not part of the segment request path. | Read client collections or rule sets directly |
+**API layer.** The FastAPI routers, Pydantic schemas, and middleware that every consumer call goes through.
+- Routes `/v1/clients/{clientId}/segments`, `/v1/segments:batch`, and `/v1/rulesets`
+- Validates requests and responses against the published OpenAPI contract
+- Maps errors to one envelope, propagates `X-Request-ID`, and writes JSON access logs
+- Contains no segmentation logic
+
+**SegmentationService.** The orchestrator that runs one segment request from start to finish.
+- Resolves the requested families plus their dependencies (for example, `OPPORTUNITY` needs `ADVICE`)
+- Works out which data types to load from the facts those families read
+- Calls the repositories, then the fact deriver, then the rule engine, and builds the response
+- Never queries MongoDB or applies thresholds itself
+
+**Repositories.** The data-access layer, with one repository per data type, that fetches a client's documents from MongoDB.
+- `ProfileRepo`, `AccountsRepo`, `EngagementRepo`, `AdviceRepo` (plus `RuleSetRepo` for the registry)
+- Load only the data types a request needs
+- Use indexed `find()` calls (`_id`, or the multikey `ownerClientIds` index), all in one snapshot session per request
+- Use projections, so personal details never leave the database on the segment path
+- Fetch only: business rules such as "OPEN accounts only" belong to the fact deriver, so they stay configurable and traceable
+
+**Fact Deriver.** The step that turns loaded documents into named facts as of the request's `asOfDate`.
+- The `FACTS` registry maps each fact name to its data type and derivation function
+- Computes `age`, `qualifyingBalance` (`Decimal`), `heldOpenAccountTypes`, `daysSinceLogin`, and more
+- Applies the rule set's `accountFilter` (OPEN accounts, primary owner)
+- Emits `DataQualityNote`s for missing documents, null fields, and cross-field conflicts
+- Knows nothing about segment names
+
+**Rule Engine.** A pure function that turns facts into segments using the active rule set.
+- No I/O, database, or clock reads: the same inputs always give the same output (NFR-01)
+- Four evaluator kinds: `THRESHOLD_BANDS`, `VALUE_MAP`, `RANGE_BANDS`, `PREDICATES`
+- Evaluates exclusive families first, then `OPPORTUNITY`, in dependency order
+- Returns a uniform `FamilyResult` per family, plus a trace when `explain=true`
+- Has no hard-coded thresholds or segment names
+
+**Rule-Set Registry.** The component that loads, validates, and caches rule-set documents stored in MongoDB.
+- Reads the `rulesets` and `settings` (active pointer) collections in MongoDB through `RuleSetRepo`
+- Caches published versions in memory indefinitely, since they are immutable
+- Re-reads the active pointer at most every 30 seconds, so activation spreads to all workers
+- Validates drafts on create and update (evaluator kinds, known facts, family dependencies)
+- Serves the draft → publish → activate lifecycle (§5.4)
+- Hands the engine a rule set but never evaluates rules itself
+
+**IngestionService.** The service that loads and refreshes client data and seed rule sets in MongoDB.
+- Validates each data type in `data/*.json` with its Pydantic model
+- Stores money as `Decimal128`, rejects invalid or under-22 DOBs, and quarantines orphan records
+- Loads into staging collections and then swaps them in atomically, so readers never see a half-loaded data set
+- Seeds `rulesets/*.json` into the `rulesets` collection and records each run in `ingestion_runs`
+- Runs as a one-shot container, never on the request path
+
+**Intent service** *(future extension).* A separate consumer that classifies client text and enriches the result by calling the segment API (§9).
+- Never reads client collections or rule sets directly
 
 ---
 
@@ -162,7 +202,7 @@ sequenceDiagram
 
 Notes:
 
-- **One snapshot.** All reads for one request run in a MongoDB session with `snapshot=True`. They see one consistent point in time even if an ingest is running. This requires a replica set, so docker-compose runs a single-node replica set (§6.3).
+- **One snapshot.** All reads for one request run in a MongoDB session with `snapshot=True`. They see one consistent point in time even if the IngestionService is running. This requires a replica set, so docker-compose runs a single-node replica set (§6.3).
 - **Queries fetch, Python decides.** Repositories return every document for the client. Rules such as "OPEN accounts only" and "primary owner only" are applied in the fact deriver from rule-set config. That keeps rules as data and lets `explain` list exactly which accounts counted.
 - **Filters never change segments.** `?families=` changes which data types are loaded and which families are returned. A segment value is always identical with or without the filter, because each family's inputs are always loaded. `dataQuality` only covers the data types that were loaded.
 - **Batch** (`POST /v1/segments:batch`) loads each data type for all requested clients in **one query per collection** (`{_id: {$in: ids}}`, or `{ownerClientIds: {$in: ids}}` for accounts), then evaluates per client.
@@ -189,13 +229,13 @@ Each query is either an `_id` lookup or uses the multikey index on `ownerClientI
 
 ### 3.5 Ingestion: how the data types get into the database
 
-A one-shot job, `python -m ingest /data`, runs at startup in docker-compose:
+The **IngestionService** runs as a one-shot container at startup in docker-compose and updates MongoDB:
 
 1. Parse each `data/*.json` file with `parse_float=Decimal`, then store money as **`Decimal128`**. No balance is ever a float.
 2. Validate each record with that data type's Pydantic model. Collections also have `$jsonSchema` validators (§4.3), so a bad write is rejected at the database too.
 3. Apply the ingestion rules from the segmentation-groups doc:
    - **DOB invalid or under 22:** load the client with `dateOfBirth: null` and `dobStatus: "REJECTED"`, and log an ingestion issue. The DOB never reaches the rules.
-   - **Orphan record**, such as engagement for `C-999999`, which has no profile: quarantine it in `ingestion_issues` and don't load it. A lookup for that client returns 404. MongoDB has no foreign keys, so the ingest job enforces this itself.
+   - **Orphan record**, such as engagement for `C-999999`, which has no profile: quarantine it in `ingestion_issues` and don't load it. A lookup for that client returns 404. MongoDB has no foreign keys, so the IngestionService enforces this itself.
    - **Unknown values**, such as a new `adviceService`: load them as-is. `UNMAPPED_ADVICE_VALUE` is reported at evaluation time.
 4. Load into **staging collections**, then swap them in with `renameCollection(..., dropTarget=True)`, so readers never see a half-loaded data set. Record an `ingestion_runs` document with the source `asOfDate`, the seed, and counts.
 5. **Seed rule sets:** insert `rulesets/*.json` into the `rulesets` collection if those versions are missing, and set the active version if none is set.
@@ -223,7 +263,7 @@ Use **MongoDB 7**, accessed through **PyMongo's async API** (`AsyncMongoClient`)
 
 | Trade-off | Mitigation |
 |---|---|
-| No foreign keys, so orphan records are possible | The ingest job validates references and quarantines orphans (§3.5). A golden test covers `C-999999`. |
+| No foreign keys, so orphan records are possible | The IngestionService validates references and quarantines orphans (§3.5). A golden test covers `C-999999`. |
 | Schemaless means bad data can slip in | Pydantic validation on every write path, plus a `$jsonSchema` validator per collection for required fields and types |
 | Decimal handling is not automatic | A single `DecimalCodec` is registered on the client's `CodecOptions`. Balances are never stored as `double`. A test asserts the BSON type is `decimal`. |
 | Transactions and snapshot reads need a replica set | docker-compose starts `mongod --replSet rs0` and runs `rs.initiate()` once. That is a single node, so there is no extra infrastructure. |
@@ -492,7 +532,7 @@ services/segmentation/
 │   │   └── engine.py           # evaluate(ruleset, families, facts) -> dict[str, FamilyResult]
 │   └── services/
 │       └── segmentation.py     # SegmentationService (orchestrator)
-├── ingest/__main__.py          # python -m ingest /data
+├── ingestion/                  # IngestionService: python -m ingestion /data --rulesets /rulesets
 ├── tests/
 ├── pyproject.toml
 └── Dockerfile
@@ -625,9 +665,9 @@ services:
              "try { rs.status().ok } catch (e) { rs.initiate({_id:'rs0',members:[{_id:0,host:'mongo:27017'}]}).ok }"]
       interval: 3s
       retries: 20
-  ingest:
+  ingestion-service:
     build: ./services/segmentation
-    command: python -m ingest /data --rulesets /rulesets
+    command: python -m ingestion /data --rulesets /rulesets
     environment: { MONGODB_URI: "mongodb://mongo:27017/?replicaSet=rs0", MONGODB_DB: css }
     volumes: ["./data:/data:ro", "./rulesets:/rulesets:ro"]
     depends_on: { mongo: { condition: service_healthy } }
@@ -636,7 +676,7 @@ services:
     command: uvicorn app.main:create_app --factory --host 0.0.0.0 --port 8000
     environment: { MONGODB_URI: "mongodb://mongo:27017/?replicaSet=rs0", MONGODB_DB: css }
     ports: ["8000:8000"]
-    depends_on: { ingest: { condition: service_completed_successfully } }
+    depends_on: { ingestion-service: { condition: service_completed_successfully } }
   dashboard:
     build: ./dashboard
     depends_on: [api]
@@ -891,7 +931,7 @@ These values were computed from the supplied data with the rules above.
 | 06 Performance | Proposed target: p95 < 100 ms for a single client. Each data type is one indexed lookup, and the MongoDB client is reused. Final targets will be set in evaluation planning. |
 | 08 Reproducibility | `asOfDate` comes from config and can be overridden per request. Ingestion records the source `asOfDate`. |
 | 09 Observability | JSON logs with `X-Request-ID`, consumer ID, rule-set version, which data types were loaded, query timings, and data-quality counts |
-| 10 Portability | docker-compose runs MongoDB (single-node replica set), ingest, the API, and the dashboard |
+| 10 Portability | docker-compose runs MongoDB (single-node replica set), the IngestionService, the API, and the dashboard |
 | 11 Data integrity | `Decimal128` in MongoDB, `Decimal` in Python, and strings in JSON |
 | 12 Explainability | `explain=true` returns facts, a trace, and the contributing account IDs |
 
@@ -901,7 +941,7 @@ These values were computed from the supplied data with the rules above.
 
 ```
 vanguard-css/
-├── services/segmentation/   # FastAPI app, ingest job, tests (§6.1)
+├── services/segmentation/   # FastAPI app, IngestionService, tests (§6.1)
 ├── rulesets/                # schema.json, v1.0.0.json: seeds + review copies
 ├── dashboard/               # demo consumer (FR-18)
 ├── data/                    # supplied synthetic data (read-only)
@@ -911,7 +951,7 @@ vanguard-css/
 
 **Segment service (this build):**
 
-1. MongoDB setup (replica set, indexes, validators, Decimal codec) and the ingest job, with ingestion tests.
+1. MongoDB setup (replica set, indexes, validators, Decimal codec) and the IngestionService, with ingestion tests.
 2. Repositories, facts, and the rule engine with rule set v1.0.0, with the edge-case golden tests passing.
 3. FastAPI app: segment routers, dependencies, error envelope, OpenAPI spec, docker-compose.
 4. Rule-set lifecycle endpoints (draft, publish, activate), the batch endpoint, and observability. Demonstrate by adding one §5.3 family as v1.1.0 without a deploy.
