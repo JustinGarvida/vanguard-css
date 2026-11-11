@@ -45,14 +45,15 @@ Editable source: [`architecture.drawio`](architecture.drawio). Page 1 shows the 
 
 ```mermaid
 flowchart LR
-    subgraph Consumers[External Vanguard microservices]
+    subgraph Consumers[Vanguard services]
+        CH[Contact-center chat /<br/>web-mobile assistant]
         MS1[Web / mobile backend]
         MS2[Contact-center service]
         MS3[Marketing / offers service]
         DASH[Demo dashboard]
     end
 
-    CH[Client-facing channels<br/>chat / assistant] -->|POST /v1/interactions:classify| INT
+    CH -->|POST /v1/interactions:classify| INT
 
     subgraph IS[Intent Service - FastAPI]
         INT[InteractionService]
